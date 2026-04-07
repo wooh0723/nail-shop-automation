@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useCallback, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export const PRICES = ["39아트", "59아트", "79아트"] as const;
 export type PriceIndex = 0 | 1 | 2;
@@ -14,17 +14,7 @@ export default function PriceSwiper({
   onChange: (idx: PriceIndex) => void;
   children: React.ReactNode;
 }) {
-  const touchStartX = useRef<number>(0);
   const [showNudge, setShowNudge] = useState(false);
-
-  const prev = useCallback(
-    () => priceIndex > 0 && onChange((priceIndex - 1) as PriceIndex),
-    [priceIndex, onChange]
-  );
-  const next = useCallback(
-    () => priceIndex < 2 && onChange((priceIndex + 1) as PriceIndex),
-    [priceIndex, onChange]
-  );
 
   // 1.2초 후 nudge 트리거
   useEffect(() => {
@@ -67,19 +57,7 @@ export default function PriceSwiper({
         })}
       </div>
 
-      {/* Swipe area */}
-      <div
-        onTouchStart={(e) => {
-          touchStartX.current = e.touches[0].clientX;
-        }}
-        onTouchEnd={(e) => {
-          const delta = e.changedTouches[0].clientX - touchStartX.current;
-          if (delta < -50) next();
-          else if (delta > 50) prev();
-        }}
-      >
-        {children}
-      </div>
+      {children}
     </div>
   );
 }
