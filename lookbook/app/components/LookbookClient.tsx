@@ -28,7 +28,6 @@ export default function LookbookClient({
 
   function handleThemeChange(next: Theme) {
     setTheme(next);
-    setPriceIndex(0);
     setContentKey((k) => k + 1);
   }
 
