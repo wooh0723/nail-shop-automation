@@ -1,6 +1,8 @@
 name: Fetch Notion & Deploy
 
 on:
+  push:
+    branches: [main]
   schedule:
     # 매일 KST 06:00 (UTC 21:00)
     - cron: "0 21 * * *"
