@@ -46,6 +46,7 @@ jobs:
           git push
 
       - name: Deploy to Vercel
+        working-directory: .
         run: |
           npx vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
           npx vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
