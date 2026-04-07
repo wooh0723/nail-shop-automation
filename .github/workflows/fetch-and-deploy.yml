@@ -40,7 +40,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/ public/images/
+          git add -f public/data/ public/images/
           git diff --cached --quiet && echo "No changes to commit" && exit 0
           git commit -m "chore: sync notion data [skip ci]"
           git push
