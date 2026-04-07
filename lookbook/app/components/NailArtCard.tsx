@@ -9,14 +9,18 @@ export default function NailArtCard({
 }) {
   return (
     <Link href={`/art/${art.id}`} className="group block">
-      <div className="relative aspect-[5/2] overflow-hidden bg-[#f0f0f0]">
+      <div
+        className={`relative overflow-hidden bg-[#f0f0f0] ${art.price === "79아트" ? "aspect-[5/2.5]" : "aspect-[5/2]"}`}
+      >
         {art.coverImage ? (
           <>
             <Image
               src={art.coverImage}
               alt={art.name || "네일아트"}
-              width={780}
-              height={312}
+              width={750}
+              height={art.price === "79아트" ? 375 : 300}
+              sizes="390px"
+              quality={85}
               className="h-full w-full object-cover transition-transform duration-700"
               style={{
                 transition:

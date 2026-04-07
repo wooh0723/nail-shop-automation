@@ -1,8 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
+  images: {
+    deviceSizes: [390],
+    imageSizes: [390],
+  },
 };
 
 export default nextConfig;

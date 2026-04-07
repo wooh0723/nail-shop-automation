@@ -34,8 +34,10 @@ export default async function ArtPage({
             <Image
               src={art.coverImage}
               alt={art.name || "네일아트"}
-              width={780}
-              height={780}
+              width={750}
+              height={750}
+              sizes="390px"
+              quality={85}
               className="w-full object-cover"
               priority
             />
@@ -63,8 +65,10 @@ export default async function ArtPage({
                 <Image
                   src={src}
                   alt={`${art.name} 상세 ${i + 1}`}
-                  width={780}
-                  height={780}
+                  width={750}
+                  height={750}
+                  sizes="390px"
+                  quality={85}
                   className="w-full object-cover"
                   loading="lazy"
                   decoding="async"

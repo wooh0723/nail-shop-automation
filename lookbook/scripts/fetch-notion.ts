@@ -7,6 +7,7 @@ import * as fs from "fs";
 import * as path from "path";
 import * as https from "https";
 import * as http from "http";
+import sharp from "sharp";
 
 // Load .env.local
 import { config } from "dotenv";
@@ -38,30 +39,48 @@ interface NailArt {
   purchaseLinks: string[];
 }
 
-function downloadFile(url: string, dest: string): Promise<void> {
+function downloadToBuffer(url: string): Promise<Buffer> {
   return new Promise((resolve, reject) => {
-    if (fs.existsSync(dest)) {
-      resolve();
-      return;
-    }
-    const file = fs.createWriteStream(dest);
     const client = url.startsWith("https") ? https : http;
     client
       .get(url, (res) => {
         if (res.statusCode === 301 || res.statusCode === 302) {
-          file.close();
-          fs.unlinkSync(dest);
-          downloadFile(res.headers.location!, dest).then(resolve).catch(reject);
+          downloadToBuffer(res.headers.location!).then(resolve).catch(reject);
           return;
         }
-        res.pipe(file);
-        file.on("finish", () => file.close(() => resolve()));
+        const chunks: Buffer[] = [];
+        res.on("data", (chunk) => chunks.push(chunk));
+        res.on("end", () => resolve(Buffer.concat(chunks)));
       })
-      .on("error", (err) => {
-        fs.unlink(dest, () => {});
-        reject(err);
-      });
+      .on("error", reject);
   });
+}
+
+/** 가로 750px 리사이즈 + WebP 변환 (상세 이미지용) */
+async function processImage(buf: Buffer, dest: string): Promise<void> {
+  await sharp(buf)
+    .resize({ width: 750 })
+    .webp({ quality: 85 })
+    .toFile(dest);
+}
+
+/** 커버 이미지: 가로 750px 리사이즈 + 가격대별 크롭 + WebP 변환 */
+async function processCoverImage(
+  buf: Buffer,
+  dest: string,
+  price: string
+): Promise<void> {
+  const WIDTH = 750;
+  // 79아트: 5:2.5 (top gravity), 그 외: 5:2 (center gravity)
+  const is79 = price === "79아트";
+  const ratio = is79 ? 5 / 2.5 : 5 / 2;
+  const height = Math.round(WIDTH / ratio);
+  const position = is79 ? "top" : "centre";
+
+  await sharp(buf)
+    .resize({ width: WIDTH, height, fit: "cover", position })
+    .webp({ quality: 85 })
+    .toFile(dest);
 }
 
 function getSelectValue(prop: any): string {
@@ -123,11 +142,14 @@ async function processPage(page: PageObjectResponse): Promise<NailArt> {
       ? page.cover.file.url
       : null;
 
+  const price = getSelectValue(props["가격"]);
+
   if (coverUrl) {
-    const coverDest = path.join(OUT_IMAGES, `${pageId}-cover.jpg`);
+    const coverDest = path.join(OUT_IMAGES, `${pageId}-cover.webp`);
     try {
-      await downloadFile(coverUrl, coverDest);
-      coverImage = `/images/nail/${pageId}-cover.jpg`;
+      const buf = await downloadToBuffer(coverUrl);
+      await processCoverImage(buf, coverDest, price);
+      coverImage = `/images/nail/${pageId}-cover.webp`;
     } catch (e) {
       console.warn(`  cover 다운로드 실패: ${pageId}`, e);
     }
@@ -147,10 +169,11 @@ async function processPage(page: PageObjectResponse): Promise<NailArt> {
         imgBlock.image.type === "external"
           ? imgBlock.image.external.url
           : imgBlock.image.file.url;
-      const dest = path.join(OUT_IMAGES, `${pageId}-${imgIndex}.jpg`);
+      const dest = path.join(OUT_IMAGES, `${pageId}-${imgIndex}.webp`);
       try {
-        await downloadFile(imgUrl, dest);
-        detailImages.push(`/images/nail/${pageId}-${imgIndex}.jpg`);
+        const buf = await downloadToBuffer(imgUrl);
+        await processImage(buf, dest);
+        detailImages.push(`/images/nail/${pageId}-${imgIndex}.webp`);
         imgIndex++;
       } catch (e) {
         console.warn(`  이미지 다운로드 실패: ${pageId}-${imgIndex}`, e);
