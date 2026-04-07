@@ -22,7 +22,8 @@ Notion DB → 로컬 JSON/이미지 다운로드 → Next.js 정적 렌더링(SS
 1. 사용자 요청을 파악한다.
 2. 코드 작성 및 수정 작업을 진행한다.
 3. **검증:** `npm run build` 로 에러 없음을 확인한다.
-4. 사용자 요청 시 git commit + push (Vercel 자동 배포).
+4. 사용자 요청 시 git commit + push.
+5. **배포:** 코드 변경은 push 후 GitHub Actions 수동 트리거(`gh workflow run`). 노션 데이터는 매일 KST 06:00 자동 동기화.
 
 ---
 
@@ -36,6 +37,9 @@ Notion DB → 로컬 JSON/이미지 다운로드 → Next.js 정적 렌더링(SS
 | `public/data/`, `public/images/nail/`를 직접 git 커밋 | GitHub Actions가 `git add -f`로 자동 커밋 — 로컬에서는 `.gitignore`에 포함 |
 | 에러를 무시하고 진행 (Silently fail) | fetch 실패 시 반드시 에러 로깅 후 `process.exit(1)` |
 | 요청 범위(현재 Plan) 초과 작업 | 오버엔지니어링 방지 — 현재 파일의 목표만 달성할 것 |
+| Vercel Root Directory 변경 | 현재 `lookbook`으로 고정. 변경 시 Actions 배포와 경로 충돌 발생 |
+| Vercel Git 자동 배포 활성화 | 모노레포 구조에서 Root Directory 이중 중첩 문제 발생. 배포는 반드시 GitHub Actions 경유 |
+| Actions workflow에서 Deploy 스텝의 `working-directory` 변경 | Deploy 스텝은 반드시 리포 루트(`.`)에서 실행해야 함. `lookbook`에서 실행하면 `lookbook/lookbook` 이중 경로 에러 |
 
 ---
 
@@ -44,7 +48,22 @@ Notion DB → 로컬 JSON/이미지 다운로드 → Next.js 정적 렌더링(SS
 - **데이터:** `scripts/fetch-notion.ts` → `public/data/nailarts.json` + `public/images/nail/*.webp`
 - **이미지:** sharp로 750px 리사이즈 + WebP q85 변환. 커버는 가격대별 크롭 (39/59아트: 5:2 center, 79아트: 5:2.5 top)
 - **렌더링:** Next.js App Router, `generateStaticParams` 사용한 100% 정적 렌더링
-- **배포:** Vercel (GitHub 연동, push 시 자동 배포) + GitHub Actions (매일 KST 06:00 노션 데이터 동기화)
+- **배포:** GitHub Actions 전용 (Vercel Git 자동 배포는 비활성화 상태)
+
+---
+
+## 배포 구조
+
+```
+코드 변경 → git push → GitHub Actions 수동 트리거 → Vercel 배포
+노션 데이터 → GitHub Actions (매일 KST 06:00 자동) → fetch + 커밋 → Vercel 배포
+```
+
+- **Vercel Git 자동 배포: 비활성화** — 모노레포(lookbook/ 하위)에서 Root Directory 이중 중첩 문제 발생
+- **Vercel Root Directory: `lookbook`** — Vercel API로 설정됨. 절대 변경 금지
+- **workflow의 Deploy 스텝: `working-directory: .`(리포 루트)** — `vercel pull`이 Root Directory를 자동 반영하므로 lookbook에서 실행하면 이중 경로 에러
+- **Fetch/Install/Build 스텝: `working-directory: lookbook`** — Next.js 프로젝트 위치
+- **`vercel deploy` 일시 에러 대비:** `|| echo` 처리로 워크플로우 실패 방지
 
 ---
 
