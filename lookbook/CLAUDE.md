@@ -38,7 +38,7 @@ Notion DB → 로컬 JSON/이미지 다운로드 → Next.js 정적 렌더링(SS
 | 에러를 무시하고 진행 (Silently fail) | fetch 실패 시 반드시 에러 로깅 후 `process.exit(1)` |
 | 요청 범위(현재 Plan) 초과 작업 | 오버엔지니어링 방지 — 현재 파일의 목표만 달성할 것 |
 | Vercel Root Directory 변경 | 현재 `lookbook`으로 고정. 변경 시 Actions 배포와 경로 충돌 발생 |
-| Vercel Git 자동 배포 활성화 | 모노레포 구조에서 Root Directory 이중 중첩 문제 발생. 배포는 반드시 GitHub Actions 경유 |
+| Vercel Git 연동 재연결 | 모노레포 구조에서 Root Directory 이중 중첩 + 에러 메일 스팸 발생. 배포는 반드시 GitHub Actions 경유 |
 | Actions workflow에서 Deploy 스텝의 `working-directory` 변경 | Deploy 스텝은 반드시 리포 루트(`.`)에서 실행해야 함. `lookbook`에서 실행하면 `lookbook/lookbook` 이중 경로 에러 |
 
 ---
@@ -55,11 +55,11 @@ Notion DB → 로컬 JSON/이미지 다운로드 → Next.js 정적 렌더링(SS
 ## 배포 구조
 
 ```
-코드 변경 → git push → GitHub Actions 수동 트리거 → Vercel 배포
+코드 변경 → git push(main) → GitHub Actions 자동 트리거 → Vercel 배포
 노션 데이터 → GitHub Actions (매일 KST 06:00 자동) → fetch + 커밋 → Vercel 배포
 ```
 
-- **Vercel Git 자동 배포: 비활성화** — 모노레포(lookbook/ 하위)에서 Root Directory 이중 중첩 문제 발생
+- **Vercel Git 연동: 해제됨** — 모노레포 구조에서 Root Directory 이중 중첩으로 빌드 실패 + 에러 메일 스팸 발생. 재연결 절대 금지
 - **Vercel Root Directory: `lookbook`** — Vercel API로 설정됨. 절대 변경 금지
 - **workflow의 Deploy 스텝: `working-directory: .`(리포 루트)** — `vercel pull`이 Root Directory를 자동 반영하므로 lookbook에서 실행하면 이중 경로 에러
 - **Fetch/Install/Build 스텝: `working-directory: lookbook`** — Next.js 프로젝트 위치
