@@ -66,35 +66,19 @@ NOTION_DATABASE_ID=...
 
 ---
 
-## 지금 해야 할 작업 순서
+## 작업 순서 (모두 완료)
 
 ```
-001-init-structure      폴더/파일 구조 + 문서 세팅
-002-fetch-script        노션 fetch 스크립트 구현
-003-static-render       Next.js 정적 렌더링 구현
-004-filter-sort         필터/정렬 기능
-005-github-actions      GitHub Actions 자동화
+001-init-structure      폴더/파일 구조 + 문서 세팅              ✅
+002-fetch-script        노션 fetch 스크립트 구현                ✅
+003-static-render       Next.js 정적 렌더링 구현                ✅
+004-filter-sort         테마 탭 + 가격 버튼 필터                ✅
+005-visual-design       B&W 스타일링 + Supanova 스킬 적용       ✅
+006-github-actions      GitHub Actions + Vercel 자동 배포       ✅
 ```
 
----
+## 현재 상태
 
-## 시작 지시
-
-아래를 Claude Code 터미널에 붙여넣어서 시작:
-
-```
-이 파일(START.md)을 읽었어.
-지금 nail-shop-automation 폴더 안에 lookbook 프로젝트를 처음부터 만들어줘.
-
-001-init-structure부터 시작해:
-1. ARCHITECTURE.md 생성
-2. CLAUDE.md 생성 (이 START.md 내용 기반으로)
-3. docs/ 구조 생성 (FRONTEND.md, exec-plans/active/)
-4. exec-plans/active/001~005 명세 파일 생성
-5. Next.js 프로젝트 초기화 (있으면 스킵)
-
-완료 조건:
-- 폴더 구조 전부 생성됨
-- CLAUDE.md에 작업 방식과 금지사항 명시됨
-- exec-plans 001~005 파일 전부 존재
-```
+- 프로덕션 배포 완료: Vercel (GitHub 연동, push 시 자동 배포)
+- GitHub Actions: 매일 KST 06:00 노션 데이터 자동 동기화
+- 리포: github.com/wooh0723/nail-shop-automation (private)
