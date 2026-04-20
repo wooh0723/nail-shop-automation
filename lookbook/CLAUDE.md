@@ -40,13 +40,17 @@ Notion DB → 로컬 JSON/이미지 다운로드 → Next.js 정적 렌더링(SS
 | Vercel Root Directory 변경 | 현재 `lookbook`으로 고정. 변경 시 Actions 배포와 경로 충돌 발생 |
 | Vercel Git 연동 재연결 | 모노레포 구조에서 Root Directory 이중 중첩 + 에러 메일 스팸 발생. 배포는 반드시 GitHub Actions 경유 |
 | Actions workflow에서 Deploy 스텝의 `working-directory` 변경 | Deploy 스텝은 반드시 리포 루트(`.`)에서 실행해야 함. `lookbook`에서 실행하면 `lookbook/lookbook` 이중 경로 에러 |
+| 커버 이미지를 특정 aspect로 sharp 크롭 | 노션 원본이 아트별로 다른 비율로 업로드되므로 강제 크롭은 손톱 팁/큐티클 잘림 유발. 그리드 컨테이너 aspect로 표시 비율 조정할 것 |
+| PEDI 썸네일을 `body[1]` 이미지로 스왑 | 본문 두 번째 이미지는 대부분 **재료/도구 레퍼런스 사진**이지 페디 완성 사진이 아님 (2026-04-20 확인). 썸네일은 `page.cover` 사용 유지 |
 
 ---
 
 ## 핵심 아키텍처 결정
 
 - **데이터:** `scripts/fetch-notion.ts` → `public/data/nailarts.json` + `public/images/nail/*.webp`
-- **이미지:** sharp로 750px 리사이즈 + WebP q85 변환. 커버는 가격대별 크롭 (39/59아트: 5:2 center, 79아트: 5:2.5 top)
+- **이미지:** sharp로 750px 리사이즈 + WebP q85 변환. 커버는 **크롭 없이 원본 비율 보존** (출력 치수 `coverWidth`/`coverHeight`를 JSON에 저장)
+- **그리드 레이아웃:** NAIL은 5:2 고정 aspect, PEDI는 이미지별 natural aspect + `max-w-[65%] mx-auto` 중앙 정렬
+- **카테고리:** 노션 "구분" 프로퍼티(NAIL/PEDI) 기준 필터. 화면 하단 중앙에 `CategoryToggle` 고정 배치
 - **렌더링:** Next.js App Router, `generateStaticParams` 사용한 100% 정적 렌더링
 - **배포:** GitHub Actions 전용 (Vercel Git 자동 배포는 비활성화 상태)
 
