@@ -1370,9 +1370,9 @@
     "price": "39아트",
     "season": "2605",
     "artist": "홍대점",
-    "coverImage": "/images/nail/33057ddb2d67809786ecedc096c490ef-cover.webp",
-    "coverWidth": 454,
-    "coverHeight": 221,
+    "coverImage": "",
+    "coverWidth": 0,
+    "coverHeight": 0,
     "detailImages": [
       "/images/nail/33057ddb2d67809786ecedc096c490ef-0.webp",
       "/images/nail/33057ddb2d67809786ecedc096c490ef-1.webp"
