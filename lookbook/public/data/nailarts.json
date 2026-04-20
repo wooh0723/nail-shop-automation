@@ -2,11 +2,14 @@
   {
     "id": "31f57ddb2d6780698e80d0a841956aa4",
     "name": " ",
+    "category": "NAIL",
     "theme": "FRIENDS",
     "price": "79아트",
     "season": "2604",
     "artist": "신림점",
     "coverImage": "/images/nail/31f57ddb2d6780698e80d0a841956aa4-cover.webp",
+    "coverWidth": 452,
+    "coverHeight": 182,
     "detailImages": [
       "/images/nail/31f57ddb2d6780698e80d0a841956aa4-0.webp",
       "/images/nail/31f57ddb2d6780698e80d0a841956aa4-1.webp"
@@ -20,11 +23,14 @@
   {
     "id": "32957ddb2d678102ad53e029b73ffb52",
     "name": " ",
+    "category": "NAIL",
     "theme": "LOVELY",
     "price": "59아트",
     "season": "2604",
     "artist": "발산점",
     "coverImage": "/images/nail/32957ddb2d678102ad53e029b73ffb52-cover.webp",
+    "coverWidth": 750,
+    "coverHeight": 362,
     "detailImages": [
       "/images/nail/32957ddb2d678102ad53e029b73ffb52-0.webp",
       "/images/nail/32957ddb2d678102ad53e029b73ffb52-1.webp"
@@ -37,11 +43,14 @@
   {
     "id": "32957ddb2d678105b2d0cb58a09b1816",
     "name": " ",
+    "category": "NAIL",
     "theme": "",
     "price": "",
     "season": "2604",
     "artist": "",
     "coverImage": "",
+    "coverWidth": 0,
+    "coverHeight": 0,
     "detailImages": [],
     "materials": [],
     "purchaseLinks": []
@@ -49,11 +58,14 @@
   {
     "id": "32957ddb2d67810898cefb53466428af",
     "name": " ",
+    "category": "NAIL",
     "theme": "HIP KITSCH",
     "price": "59아트",
     "season": "2604",
     "artist": "신림점",
     "coverImage": "/images/nail/32957ddb2d67810898cefb53466428af-cover.webp",
+    "coverWidth": 449,
+    "coverHeight": 203,
     "detailImages": [
       "/images/nail/32957ddb2d67810898cefb53466428af-0.webp",
       "/images/nail/32957ddb2d67810898cefb53466428af-1.webp"
@@ -64,11 +76,14 @@
   {
     "id": "32957ddb2d6781099fcee9a7b757b975",
     "name": " ",
+    "category": "NAIL",
     "theme": "",
     "price": "",
     "season": "2604",
     "artist": "",
     "coverImage": "",
+    "coverWidth": 0,
+    "coverHeight": 0,
     "detailImages": [],
     "materials": [],
     "purchaseLinks": []
@@ -76,11 +91,14 @@
   {
     "id": "32957ddb2d67810d8ea6d827a330ec9a",
     "name": " ",
+    "category": "NAIL",
     "theme": "FRIENDS",
     "price": "79아트",
     "season": "2604",
     "artist": "홍대점",
     "coverImage": "/images/nail/32957ddb2d67810d8ea6d827a330ec9a-cover.webp",
+    "coverWidth": 442,
+    "coverHeight": 194,
     "detailImages": [
       "/images/nail/32957ddb2d67810d8ea6d827a330ec9a-0.webp",
       "/images/nail/32957ddb2d67810d8ea6d827a330ec9a-1.webp"
@@ -91,11 +109,14 @@
   {
     "id": "32957ddb2d67810dbe78d4d14f6994b9",
     "name": " ",
+    "category": "NAIL",
     "theme": "HIP KITSCH",
     "price": "79아트",
     "season": "2604",
     "artist": "신림점",
     "coverImage": "/images/nail/32957ddb2d67810dbe78d4d14f6994b9-cover.webp",
+    "coverWidth": 466,
+    "coverHeight": 267,
     "detailImages": [
       "/images/nail/32957ddb2d67810dbe78d4d14f6994b9-0.webp",
       "/images/nail/32957ddb2d67810dbe78d4d14f6994b9-1.webp"
@@ -106,11 +127,14 @@
   {
     "id": "32957ddb2d67810e9ce7fb0eaab8ef92",
     "name": " ",
+    "category": "NAIL",
     "theme": "FRIENDS",
     "price": "59아트",
     "season": "2604",
     "artist": "홍대점",
     "coverImage": "/images/nail/32957ddb2d67810e9ce7fb0eaab8ef92-cover.webp",
+    "coverWidth": 482,
+    "coverHeight": 182,
     "detailImages": [
       "/images/nail/32957ddb2d67810e9ce7fb0eaab8ef92-0.webp",
       "/images/nail/32957ddb2d67810e9ce7fb0eaab8ef92-1.webp"
@@ -123,11 +147,14 @@
   {
     "id": "32957ddb2d678110b5aef7bb20518dd7",
     "name": " ",
+    "category": "NAIL",
     "theme": "NUANCE",
     "price": "79아트",
     "season": "2604",
     "artist": "강남점",
     "coverImage": "/images/nail/32957ddb2d678110b5aef7bb20518dd7-cover.webp",
+    "coverWidth": 463,
+    "coverHeight": 221,
     "detailImages": [
       "/images/nail/32957ddb2d678110b5aef7bb20518dd7-0.webp"
     ],
@@ -139,11 +166,14 @@
   {
     "id": "32957ddb2d678127bd8fd92e967df28d",
     "name": " ",
+    "category": "NAIL",
     "theme": "LOVELY",
     "price": "39아트",
     "season": "2604",
     "artist": "발산점",
     "coverImage": "/images/nail/32957ddb2d678127bd8fd92e967df28d-cover.webp",
+    "coverWidth": 750,
+    "coverHeight": 335,
     "detailImages": [
       "/images/nail/32957ddb2d678127bd8fd92e967df28d-0.webp",
       "/images/nail/32957ddb2d678127bd8fd92e967df28d-1.webp"
@@ -156,11 +186,14 @@
   {
     "id": "32957ddb2d6781288fe9c0047235238f",
     "name": " ",
+    "category": "NAIL",
     "theme": "NUANCE",
     "price": "39아트",
     "season": "2604",
     "artist": "강남점",
     "coverImage": "/images/nail/32957ddb2d6781288fe9c0047235238f-cover.webp",
+    "coverWidth": 455,
+    "coverHeight": 199,
     "detailImages": [
       "/images/nail/32957ddb2d6781288fe9c0047235238f-0.webp",
       "/images/nail/32957ddb2d6781288fe9c0047235238f-1.webp"
@@ -171,11 +204,14 @@
   {
     "id": "32957ddb2d678135b4b0cdefa98f1369",
     "name": " ",
+    "category": "NAIL",
     "theme": "HIP KITSCH",
     "price": "59아트",
     "season": "2604",
     "artist": "건대점",
     "coverImage": "/images/nail/32957ddb2d678135b4b0cdefa98f1369-cover.webp",
+    "coverWidth": 469,
+    "coverHeight": 208,
     "detailImages": [
       "/images/nail/32957ddb2d678135b4b0cdefa98f1369-0.webp",
       "/images/nail/32957ddb2d678135b4b0cdefa98f1369-1.webp"
@@ -186,11 +222,14 @@
   {
     "id": "32957ddb2d6781368ecbedbbb86ce569",
     "name": "",
+    "category": "NAIL",
     "theme": "",
     "price": "",
     "season": "2604",
     "artist": "",
     "coverImage": "",
+    "coverWidth": 0,
+    "coverHeight": 0,
     "detailImages": [],
     "materials": [],
     "purchaseLinks": []
@@ -198,11 +237,14 @@
   {
     "id": "32957ddb2d678137897de4f94002ccc4",
     "name": " ",
+    "category": "NAIL",
     "theme": "LOVELY",
     "price": "39아트",
     "season": "2604",
     "artist": "발산점",
     "coverImage": "/images/nail/32957ddb2d678137897de4f94002ccc4-cover.webp",
+    "coverWidth": 750,
+    "coverHeight": 326,
     "detailImages": [
       "/images/nail/32957ddb2d678137897de4f94002ccc4-0.webp",
       "/images/nail/32957ddb2d678137897de4f94002ccc4-1.webp"
@@ -215,11 +257,14 @@
   {
     "id": "32957ddb2d67813c847fc64514e5b5f8",
     "name": " ",
+    "category": "NAIL",
     "theme": "HIP KITSCH",
     "price": "39아트",
     "season": "2604",
     "artist": "건대점",
     "coverImage": "/images/nail/32957ddb2d67813c847fc64514e5b5f8-cover.webp",
+    "coverWidth": 477,
+    "coverHeight": 184,
     "detailImages": [
       "/images/nail/32957ddb2d67813c847fc64514e5b5f8-0.webp",
       "/images/nail/32957ddb2d67813c847fc64514e5b5f8-1.webp"
@@ -230,11 +275,14 @@
   {
     "id": "32957ddb2d67813d9723e1460e42e7a2",
     "name": " ",
+    "category": "NAIL",
     "theme": "LOVELY",
     "price": "59아트",
     "season": "2604",
     "artist": "강남점",
     "coverImage": "/images/nail/32957ddb2d67813d9723e1460e42e7a2-cover.webp",
+    "coverWidth": 423,
+    "coverHeight": 209,
     "detailImages": [
       "/images/nail/32957ddb2d67813d9723e1460e42e7a2-0.webp",
       "/images/nail/32957ddb2d67813d9723e1460e42e7a2-1.webp"
@@ -245,11 +293,14 @@
   {
     "id": "32957ddb2d678142bd7be79be69853d0",
     "name": " ",
+    "category": "NAIL",
     "theme": "HIP KITSCH",
     "price": "59아트",
     "season": "2604",
     "artist": "신림점",
     "coverImage": "/images/nail/32957ddb2d678142bd7be79be69853d0-cover.webp",
+    "coverWidth": 461,
+    "coverHeight": 197,
     "detailImages": [
       "/images/nail/32957ddb2d678142bd7be79be69853d0-0.webp",
       "/images/nail/32957ddb2d678142bd7be79be69853d0-1.webp"
@@ -260,11 +311,14 @@
   {
     "id": "32957ddb2d678143844aea6e5f3d8529",
     "name": " ",
+    "category": "NAIL",
     "theme": "LOVELY",
     "price": "79아트",
     "season": "2604",
     "artist": "신림점",
     "coverImage": "/images/nail/32957ddb2d678143844aea6e5f3d8529-cover.webp",
+    "coverWidth": 404,
+    "coverHeight": 254,
     "detailImages": [
       "/images/nail/32957ddb2d678143844aea6e5f3d8529-0.webp",
       "/images/nail/32957ddb2d678143844aea6e5f3d8529-1.webp"
@@ -275,11 +329,14 @@
   {
     "id": "32957ddb2d67814488f3c9b9e8cef7f5",
     "name": " ",
+    "category": "NAIL",
     "theme": "NUANCE",
     "price": "59아트",
     "season": "2604",
     "artist": "강남점",
     "coverImage": "/images/nail/32957ddb2d67814488f3c9b9e8cef7f5-cover.webp",
+    "coverWidth": 455,
+    "coverHeight": 190,
     "detailImages": [
       "/images/nail/32957ddb2d67814488f3c9b9e8cef7f5-0.webp",
       "/images/nail/32957ddb2d67814488f3c9b9e8cef7f5-1.webp"
@@ -292,11 +349,14 @@
   {
     "id": "32957ddb2d678144953ef478a24aff8f",
     "name": " ",
+    "category": "NAIL",
     "theme": "FRIENDS",
     "price": "79아트",
     "season": "2604",
     "artist": "발산점",
     "coverImage": "/images/nail/32957ddb2d678144953ef478a24aff8f-cover.webp",
+    "coverWidth": 750,
+    "coverHeight": 431,
     "detailImages": [
       "/images/nail/32957ddb2d678144953ef478a24aff8f-0.webp",
       "/images/nail/32957ddb2d678144953ef478a24aff8f-1.webp"
@@ -309,11 +369,14 @@
   {
     "id": "32957ddb2d67814698e9c2356a84ee1e",
     "name": " ",
+    "category": "NAIL",
     "theme": "HIP KITSCH",
     "price": "39아트",
     "season": "2604",
     "artist": "신림점",
     "coverImage": "/images/nail/32957ddb2d67814698e9c2356a84ee1e-cover.webp",
+    "coverWidth": 403,
+    "coverHeight": 173,
     "detailImages": [
       "/images/nail/32957ddb2d67814698e9c2356a84ee1e-0.webp",
       "/images/nail/32957ddb2d67814698e9c2356a84ee1e-1.webp"
@@ -324,11 +387,14 @@
   {
     "id": "32957ddb2d67814ca29cdf75cbe20056",
     "name": " ",
+    "category": "NAIL",
     "theme": "LOVELY",
     "price": "39아트",
     "season": "2604",
     "artist": "발산점",
     "coverImage": "/images/nail/32957ddb2d67814ca29cdf75cbe20056-cover.webp",
+    "coverWidth": 750,
+    "coverHeight": 336,
     "detailImages": [
       "/images/nail/32957ddb2d67814ca29cdf75cbe20056-0.webp",
       "/images/nail/32957ddb2d67814ca29cdf75cbe20056-1.webp"
@@ -342,11 +408,14 @@
   {
     "id": "32957ddb2d67814f80a8d0374c8a2b8c",
     "name": " ",
+    "category": "NAIL",
     "theme": "NUANCE",
     "price": "59아트",
     "season": "2604",
     "artist": "강남점",
     "coverImage": "/images/nail/32957ddb2d67814f80a8d0374c8a2b8c-cover.webp",
+    "coverWidth": 441,
+    "coverHeight": 201,
     "detailImages": [
       "/images/nail/32957ddb2d67814f80a8d0374c8a2b8c-0.webp",
       "/images/nail/32957ddb2d67814f80a8d0374c8a2b8c-1.webp"
@@ -359,11 +428,14 @@
   {
     "id": "32957ddb2d678154be44ef507c85c7b4",
     "name": " ",
+    "category": "NAIL",
     "theme": "LOVELY",
     "price": "79아트",
     "season": "2604",
     "artist": "발산점",
     "coverImage": "/images/nail/32957ddb2d678154be44ef507c85c7b4-cover.webp",
+    "coverWidth": 750,
+    "coverHeight": 482,
     "detailImages": [
       "/images/nail/32957ddb2d678154be44ef507c85c7b4-0.webp",
       "/images/nail/32957ddb2d678154be44ef507c85c7b4-1.webp"
@@ -374,11 +446,14 @@
   {
     "id": "32957ddb2d67815683eafbd38baeda44",
     "name": " ",
+    "category": "NAIL",
     "theme": "HIP KITSCH",
     "price": "79아트",
     "season": "2604",
     "artist": "신림점",
     "coverImage": "/images/nail/32957ddb2d67815683eafbd38baeda44-cover.webp",
+    "coverWidth": 456,
+    "coverHeight": 258,
     "detailImages": [
       "/images/nail/32957ddb2d67815683eafbd38baeda44-0.webp",
       "/images/nail/32957ddb2d67815683eafbd38baeda44-1.webp"
@@ -389,11 +464,14 @@
   {
     "id": "32957ddb2d678158b992f7db5e290a94",
     "name": " ",
+    "category": "NAIL",
     "theme": "NUANCE",
     "price": "79아트",
     "season": "2604",
     "artist": "강남점",
     "coverImage": "/images/nail/32957ddb2d678158b992f7db5e290a94-cover.webp",
+    "coverWidth": 473,
+    "coverHeight": 213,
     "detailImages": [
       "/images/nail/32957ddb2d678158b992f7db5e290a94-0.webp",
       "/images/nail/32957ddb2d678158b992f7db5e290a94-1.webp"
@@ -404,11 +482,14 @@
   {
     "id": "32957ddb2d678164b467c5e219f2c549",
     "name": " ",
+    "category": "NAIL",
     "theme": "LOVELY",
     "price": "59아트",
     "season": "2604",
     "artist": "발산점",
     "coverImage": "/images/nail/32957ddb2d678164b467c5e219f2c549-cover.webp",
+    "coverWidth": 750,
+    "coverHeight": 362,
     "detailImages": [
       "/images/nail/32957ddb2d678164b467c5e219f2c549-0.webp",
       "/images/nail/32957ddb2d678164b467c5e219f2c549-1.webp"
@@ -419,11 +500,14 @@
   {
     "id": "32957ddb2d678169ac2cd04dc2c3caa0",
     "name": " ",
+    "category": "NAIL",
     "theme": "LOVELY",
     "price": "39아트",
     "season": "2604",
     "artist": "발산점",
     "coverImage": "/images/nail/32957ddb2d678169ac2cd04dc2c3caa0-cover.webp",
+    "coverWidth": 750,
+    "coverHeight": 318,
     "detailImages": [
       "/images/nail/32957ddb2d678169ac2cd04dc2c3caa0-0.webp",
       "/images/nail/32957ddb2d678169ac2cd04dc2c3caa0-1.webp"
@@ -436,11 +520,14 @@
   {
     "id": "32957ddb2d67816cb2d7c1ac2de504b2",
     "name": " ",
+    "category": "NAIL",
     "theme": "FRIENDS",
     "price": "59아트",
     "season": "2604",
     "artist": "신림점",
     "coverImage": "/images/nail/32957ddb2d67816cb2d7c1ac2de504b2-cover.webp",
+    "coverWidth": 483,
+    "coverHeight": 211,
     "detailImages": [
       "/images/nail/32957ddb2d67816cb2d7c1ac2de504b2-0.webp",
       "/images/nail/32957ddb2d67816cb2d7c1ac2de504b2-1.webp"
@@ -451,11 +538,14 @@
   {
     "id": "32957ddb2d67816d854de05aea8858c3",
     "name": " ",
+    "category": "NAIL",
     "theme": "LOVELY",
     "price": "79아트",
     "season": "2604",
     "artist": "발산점",
     "coverImage": "/images/nail/32957ddb2d67816d854de05aea8858c3-cover.webp",
+    "coverWidth": 750,
+    "coverHeight": 521,
     "detailImages": [
       "/images/nail/32957ddb2d67816d854de05aea8858c3-0.webp",
       "/images/nail/32957ddb2d67816d854de05aea8858c3-1.webp"
@@ -468,11 +558,14 @@
   {
     "id": "32957ddb2d67816db2a2ef6a8bc3734a",
     "name": " ",
+    "category": "NAIL",
     "theme": "NUANCE",
     "price": "39아트",
     "season": "2604",
     "artist": "홍대점",
     "coverImage": "/images/nail/32957ddb2d67816db2a2ef6a8bc3734a-cover.webp",
+    "coverWidth": 438,
+    "coverHeight": 192,
     "detailImages": [
       "/images/nail/32957ddb2d67816db2a2ef6a8bc3734a-0.webp",
       "/images/nail/32957ddb2d67816db2a2ef6a8bc3734a-1.webp"
@@ -483,11 +576,14 @@
   {
     "id": "32957ddb2d67816f9993cd907513eff4",
     "name": " ",
+    "category": "NAIL",
     "theme": "FRIENDS",
     "price": "39아트",
     "season": "2604",
     "artist": "홍대점",
     "coverImage": "/images/nail/32957ddb2d67816f9993cd907513eff4-cover.webp",
+    "coverWidth": 482,
+    "coverHeight": 181,
     "detailImages": [
       "/images/nail/32957ddb2d67816f9993cd907513eff4-0.webp",
       "/images/nail/32957ddb2d67816f9993cd907513eff4-1.webp",
@@ -499,11 +595,14 @@
   {
     "id": "32957ddb2d678170b566d2104753050e",
     "name": " ",
+    "category": "NAIL",
     "theme": "HIP KITSCH",
     "price": "39아트",
     "season": "2604",
     "artist": "신림점",
     "coverImage": "/images/nail/32957ddb2d678170b566d2104753050e-cover.webp",
+    "coverWidth": 471,
+    "coverHeight": 197,
     "detailImages": [
       "/images/nail/32957ddb2d678170b566d2104753050e-0.webp",
       "/images/nail/32957ddb2d678170b566d2104753050e-1.webp"
@@ -514,11 +613,14 @@
   {
     "id": "32957ddb2d678173912af84e0dd4ecd3",
     "name": " ",
+    "category": "NAIL",
     "theme": "LOVELY",
     "price": "59아트",
     "season": "2604",
     "artist": "발산점",
     "coverImage": "/images/nail/32957ddb2d678173912af84e0dd4ecd3-cover.webp",
+    "coverWidth": 639,
+    "coverHeight": 312,
     "detailImages": [
       "/images/nail/32957ddb2d678173912af84e0dd4ecd3-0.webp",
       "/images/nail/32957ddb2d678173912af84e0dd4ecd3-1.webp"
@@ -529,11 +631,14 @@
   {
     "id": "32957ddb2d678176881ec5d6a30ed033",
     "name": " ",
+    "category": "NAIL",
     "theme": "FRIENDS",
     "price": "39아트",
     "season": "2604",
     "artist": "발산점",
     "coverImage": "/images/nail/32957ddb2d678176881ec5d6a30ed033-cover.webp",
+    "coverWidth": 750,
+    "coverHeight": 309,
     "detailImages": [
       "/images/nail/32957ddb2d678176881ec5d6a30ed033-0.webp",
       "/images/nail/32957ddb2d678176881ec5d6a30ed033-1.webp"
@@ -546,11 +651,14 @@
   {
     "id": "32957ddb2d678177bf9fec62b21fb297",
     "name": " ",
+    "category": "NAIL",
     "theme": "FRIENDS",
     "price": "59아트",
     "season": "2604",
     "artist": "발산점",
     "coverImage": "/images/nail/32957ddb2d678177bf9fec62b21fb297-cover.webp",
+    "coverWidth": 750,
+    "coverHeight": 346,
     "detailImages": [
       "/images/nail/32957ddb2d678177bf9fec62b21fb297-0.webp",
       "/images/nail/32957ddb2d678177bf9fec62b21fb297-1.webp"
@@ -564,11 +672,14 @@
   {
     "id": "32957ddb2d67817ab96ef67a46e09658",
     "name": " ",
+    "category": "NAIL",
     "theme": "FRIENDS",
     "price": "39아트",
     "season": "2604",
     "artist": "건대점",
     "coverImage": "/images/nail/32957ddb2d67817ab96ef67a46e09658-cover.webp",
+    "coverWidth": 330,
+    "coverHeight": 150,
     "detailImages": [
       "/images/nail/32957ddb2d67817ab96ef67a46e09658-0.webp",
       "/images/nail/32957ddb2d67817ab96ef67a46e09658-1.webp"
@@ -581,11 +692,14 @@
   {
     "id": "32957ddb2d678180b976ff468d04554d",
     "name": " ",
+    "category": "NAIL",
     "theme": "HIP KITSCH",
     "price": "59아트",
     "season": "2604",
     "artist": "건대점",
     "coverImage": "/images/nail/32957ddb2d678180b976ff468d04554d-cover.webp",
+    "coverWidth": 478,
+    "coverHeight": 207,
     "detailImages": [
       "/images/nail/32957ddb2d678180b976ff468d04554d-0.webp",
       "/images/nail/32957ddb2d678180b976ff468d04554d-1.webp"
@@ -599,11 +713,14 @@
   {
     "id": "32957ddb2d67818e8203e4f3c7a7c4e6",
     "name": "",
+    "category": "NAIL",
     "theme": "NUANCE",
     "price": "",
     "season": "2604",
     "artist": "",
     "coverImage": "",
+    "coverWidth": 0,
+    "coverHeight": 0,
     "detailImages": [],
     "materials": [],
     "purchaseLinks": []
@@ -611,11 +728,14 @@
   {
     "id": "32957ddb2d678195b759c52d9d2f3dfb",
     "name": " ",
+    "category": "NAIL",
     "theme": "NUANCE",
     "price": "39아트",
     "season": "2604",
     "artist": "강남점",
     "coverImage": "/images/nail/32957ddb2d678195b759c52d9d2f3dfb-cover.webp",
+    "coverWidth": 432,
+    "coverHeight": 182,
     "detailImages": [
       "/images/nail/32957ddb2d678195b759c52d9d2f3dfb-0.webp",
       "/images/nail/32957ddb2d678195b759c52d9d2f3dfb-1.webp",
@@ -627,11 +747,14 @@
   {
     "id": "32957ddb2d6781a0b761e0226e6e0bc8",
     "name": " ",
+    "category": "NAIL",
     "theme": "FRIENDS",
     "price": "59아트",
     "season": "2604",
     "artist": "건대점",
     "coverImage": "/images/nail/32957ddb2d6781a0b761e0226e6e0bc8-cover.webp",
+    "coverWidth": 340,
+    "coverHeight": 173,
     "detailImages": [
       "/images/nail/32957ddb2d6781a0b761e0226e6e0bc8-0.webp",
       "/images/nail/32957ddb2d6781a0b761e0226e6e0bc8-1.webp"
@@ -645,11 +768,14 @@
   {
     "id": "32957ddb2d6781a38f91c3bf145262db",
     "name": " ",
+    "category": "NAIL",
     "theme": "HIP KITSCH",
     "price": "39아트",
     "season": "2604",
     "artist": "건대점",
     "coverImage": "/images/nail/32957ddb2d6781a38f91c3bf145262db-cover.webp",
+    "coverWidth": 456,
+    "coverHeight": 167,
     "detailImages": [
       "/images/nail/32957ddb2d6781a38f91c3bf145262db-0.webp",
       "/images/nail/32957ddb2d6781a38f91c3bf145262db-1.webp"
@@ -660,11 +786,14 @@
   {
     "id": "32957ddb2d6781b0a552d1c90d90bc06",
     "name": " ",
+    "category": "NAIL",
     "theme": "FRIENDS",
     "price": "79아트",
     "season": "2604",
     "artist": "건대점",
     "coverImage": "/images/nail/32957ddb2d6781b0a552d1c90d90bc06-cover.webp",
+    "coverWidth": 344,
+    "coverHeight": 203,
     "detailImages": [
       "/images/nail/32957ddb2d6781b0a552d1c90d90bc06-0.webp",
       "/images/nail/32957ddb2d6781b0a552d1c90d90bc06-1.webp"
@@ -675,11 +804,14 @@
   {
     "id": "32957ddb2d6781b6bc45fbef9921f38b",
     "name": " ",
+    "category": "NAIL",
     "theme": "NUANCE",
     "price": "79아트",
     "season": "2604",
     "artist": "홍대점",
     "coverImage": "/images/nail/32957ddb2d6781b6bc45fbef9921f38b-cover.webp",
+    "coverWidth": 461,
+    "coverHeight": 203,
     "detailImages": [
       "/images/nail/32957ddb2d6781b6bc45fbef9921f38b-0.webp",
       "/images/nail/32957ddb2d6781b6bc45fbef9921f38b-1.webp"
@@ -690,11 +822,14 @@
   {
     "id": "32957ddb2d6781b8956acee0afcf9d51",
     "name": " ",
+    "category": "NAIL",
     "theme": "NUANCE",
     "price": "59아트",
     "season": "2604",
     "artist": "건대점",
     "coverImage": "/images/nail/32957ddb2d6781b8956acee0afcf9d51-cover.webp",
+    "coverWidth": 479,
+    "coverHeight": 202,
     "detailImages": [
       "/images/nail/32957ddb2d6781b8956acee0afcf9d51-0.webp",
       "/images/nail/32957ddb2d6781b8956acee0afcf9d51-1.webp"
@@ -707,11 +842,14 @@
   {
     "id": "32957ddb2d6781cbbf03d6ec638cfef8",
     "name": " ",
+    "category": "NAIL",
     "theme": "",
     "price": "",
     "season": "2604",
     "artist": "",
     "coverImage": "",
+    "coverWidth": 0,
+    "coverHeight": 0,
     "detailImages": [],
     "materials": [],
     "purchaseLinks": []
@@ -719,11 +857,14 @@
   {
     "id": "32957ddb2d6781d1b21dfd00f0720da2",
     "name": "  ",
+    "category": "NAIL",
     "theme": "NUANCE",
     "price": "39아트",
     "season": "2604",
     "artist": "강남점",
     "coverImage": "/images/nail/32957ddb2d6781d1b21dfd00f0720da2-cover.webp",
+    "coverWidth": 427,
+    "coverHeight": 194,
     "detailImages": [
       "/images/nail/32957ddb2d6781d1b21dfd00f0720da2-0.webp"
     ],
@@ -733,11 +874,14 @@
   {
     "id": "32957ddb2d6781d28142d51f95d2845c",
     "name": " ",
+    "category": "NAIL",
     "theme": "FRIENDS",
     "price": "39아트",
     "season": "2604",
     "artist": "발산점",
     "coverImage": "/images/nail/32957ddb2d6781d28142d51f95d2845c-cover.webp",
+    "coverWidth": 750,
+    "coverHeight": 308,
     "detailImages": [
       "/images/nail/32957ddb2d6781d28142d51f95d2845c-0.webp",
       "/images/nail/32957ddb2d6781d28142d51f95d2845c-1.webp"
@@ -750,11 +894,14 @@
   {
     "id": "32957ddb2d6781d2841efc83d4ed6e38",
     "name": " ",
+    "category": "NAIL",
     "theme": "HIP KITSCH",
     "price": "79아트",
     "season": "2604",
     "artist": "건대점",
     "coverImage": "/images/nail/32957ddb2d6781d2841efc83d4ed6e38-cover.webp",
+    "coverWidth": 441,
+    "coverHeight": 248,
     "detailImages": [
       "/images/nail/32957ddb2d6781d2841efc83d4ed6e38-0.webp",
       "/images/nail/32957ddb2d6781d2841efc83d4ed6e38-1.webp",
@@ -768,11 +915,14 @@
   {
     "id": "32957ddb2d6781d5a988cfa2cada942f",
     "name": " ",
+    "category": "NAIL",
     "theme": "LOVELY",
     "price": "79아트",
     "season": "2604",
     "artist": "발산점",
     "coverImage": "/images/nail/32957ddb2d6781d5a988cfa2cada942f-cover.webp",
+    "coverWidth": 750,
+    "coverHeight": 514,
     "detailImages": [
       "/images/nail/32957ddb2d6781d5a988cfa2cada942f-0.webp",
       "/images/nail/32957ddb2d6781d5a988cfa2cada942f-1.webp"
@@ -783,11 +933,14 @@
   {
     "id": "32957ddb2d6781d5acdedcd0e9015ccd",
     "name": " ",
+    "category": "NAIL",
     "theme": "NUANCE",
     "price": "59아트",
     "season": "2604",
     "artist": "건대점",
     "coverImage": "/images/nail/32957ddb2d6781d5acdedcd0e9015ccd-cover.webp",
+    "coverWidth": 457,
+    "coverHeight": 190,
     "detailImages": [
       "/images/nail/32957ddb2d6781d5acdedcd0e9015ccd-0.webp",
       "/images/nail/32957ddb2d6781d5acdedcd0e9015ccd-1.webp"
@@ -798,11 +951,14 @@
   {
     "id": "32957ddb2d6781d69dd2f3ca674bdf3f",
     "name": " ",
+    "category": "NAIL",
     "theme": "HIP KITSCH",
     "price": "79아트",
     "season": "2604",
     "artist": "강남점",
     "coverImage": "/images/nail/32957ddb2d6781d69dd2f3ca674bdf3f-cover.webp",
+    "coverWidth": 429,
+    "coverHeight": 239,
     "detailImages": [
       "/images/nail/32957ddb2d6781d69dd2f3ca674bdf3f-0.webp",
       "/images/nail/32957ddb2d6781d69dd2f3ca674bdf3f-1.webp"
@@ -813,11 +969,14 @@
   {
     "id": "32957ddb2d6781ddae49cb8d326ac469",
     "name": "",
+    "category": "NAIL",
     "theme": "",
     "price": "",
     "season": "2604",
     "artist": "",
     "coverImage": "",
+    "coverWidth": 0,
+    "coverHeight": 0,
     "detailImages": [],
     "materials": [],
     "purchaseLinks": []
@@ -825,16 +984,1148 @@
   {
     "id": "32957ddb2d6781e096d1cd7a29a142a2",
     "name": " ",
+    "category": "NAIL",
     "theme": "NUANCE",
     "price": "79아트",
     "season": "2604",
     "artist": "신림점",
     "coverImage": "/images/nail/32957ddb2d6781e096d1cd7a29a142a2-cover.webp",
+    "coverWidth": 481,
+    "coverHeight": 213,
     "detailImages": [
       "/images/nail/32957ddb2d6781e096d1cd7a29a142a2-0.webp",
       "/images/nail/32957ddb2d6781e096d1cd7a29a142a2-1.webp"
     ],
     "materials": [],
     "purchaseLinks": []
+  },
+  {
+    "id": "32e57ddb2d6780a6993aff3e2f1ec50f",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "FRIENDS",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "건대점",
+    "coverImage": "/images/nail/32e57ddb2d6780a6993aff3e2f1ec50f-cover.webp",
+    "coverWidth": 466,
+    "coverHeight": 228,
+    "detailImages": [
+      "/images/nail/32e57ddb2d6780a6993aff3e2f1ec50f-0.webp",
+      "/images/nail/32e57ddb2d6780a6993aff3e2f1ec50f-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://share.temu.com/hgYZvl6Bc7A"
+    ]
+  },
+  {
+    "id": "32e57ddb2d6780b790b5cc46fbd32b7f",
+    "name": " ",
+    "category": "PEDI",
+    "theme": "",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "",
+    "coverImage": "/images/nail/32e57ddb2d6780b790b5cc46fbd32b7f-cover.webp",
+    "coverWidth": 233,
+    "coverHeight": 156,
+    "detailImages": [
+      "/images/nail/32e57ddb2d6780b790b5cc46fbd32b7f-0.webp",
+      "/images/nail/32e57ddb2d6780b790b5cc46fbd32b7f-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d678008bdfff1d0ea117921",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "FRIENDS",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "건대점",
+    "coverImage": "/images/nail/33057ddb2d678008bdfff1d0ea117921-cover.webp",
+    "coverWidth": 465,
+    "coverHeight": 237,
+    "detailImages": [
+      "/images/nail/33057ddb2d678008bdfff1d0ea117921-0.webp",
+      "/images/nail/33057ddb2d678008bdfff1d0ea117921-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://naver.me/Gzd5w6Rk",
+      "https://a.aliexpress.com/_c3LQjyrb"
+    ]
+  },
+  {
+    "id": "33057ddb2d67802d9602fa6208a44344",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "LOVELY",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "발산점",
+    "coverImage": "/images/nail/33057ddb2d67802d9602fa6208a44344-cover.webp",
+    "coverWidth": 362,
+    "coverHeight": 168,
+    "detailImages": [
+      "/images/nail/33057ddb2d67802d9602fa6208a44344-0.webp",
+      "/images/nail/33057ddb2d67802d9602fa6208a44344-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://ko.aliexpress.com/item/1005010628039156.html?invitationCode=NStDVG5DeFl4YlQwcThXd0FWMkwvcWJkWTErWXJNcWZHVXFKakhmZHZSbWVQemFTZUJrNWVWT0s1MU1hdTAyWg&srcSns=sns_KakaoTalk&spreadType=socialShare&social_params=6000429280190&bizType=ProductDetail&spreadCode=NStDVG5DeFl4YlQwcThXd0FWMkwvcWJkWTErWXJNcWZHVXFKakhmZHZSbWVQemFTZUJrNWVWT0s1MU1hdTAyWg&aff_fcid=a26a0e65bdd44149bab838da67044bbf-1775894275228-06061-_c4dNXRE5&tt=MG&aff_fsk=_c4dNXRE5&aff_platform=default&sk=_c4dNXRE5&aff_trace_key=a26a0e65bdd44149bab838da67044bbf-1775894275228-06061-_c4dNXRE5&shareId=6000429280190&businessType=ProductDetail&platform=AE&terminal_id=857aed16c4ce447e878bb7dd79509498&afSmartRedirect=y",
+      "https://ko.aliexpress.com/item/1005008146850782.html?invitationCode=NStDVG5DeFl4YlNIMmVTaE1pZzc2YWJkWTErWXJNcWZHVXFKakhmZHZSbWVQemFTZUJrNWVWT0s1MU1hdTAyWg&srcSns=sns_KakaoTalk&spreadType=socialShare&social_params=6000430432766&bizType=ProductDetail&spreadCode=NStDVG5DeFl4YlNIMmVTaE1pZzc2YWJkWTErWXJNcWZHVXFKakhmZHZSbWVQemFTZUJrNWVWT0s1MU1hdTAyWg&aff_fcid=0cd048c754f8478a97f2bc8f9f5457e7-1775894220693-02245-_c361v7hT&tt=MG&aff_fsk=_c361v7hT&aff_platform=default&sk=_c361v7hT&aff_trace_key=0cd048c754f8478a97f2bc8f9f5457e7-1775894220693-02245-_c361v7hT&shareId=6000430432766&businessType=ProductDetail&platform=AE&terminal_id=857aed16c4ce447e878bb7dd79509498&afSmartRedirect=y"
+    ]
+  },
+  {
+    "id": "33057ddb2d678031a29bf38fb747a9c1",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "HIP KITSCH",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "홍대점",
+    "coverImage": "/images/nail/33057ddb2d678031a29bf38fb747a9c1-cover.webp",
+    "coverWidth": 451,
+    "coverHeight": 227,
+    "detailImages": [
+      "/images/nail/33057ddb2d678031a29bf38fb747a9c1-0.webp",
+      "/images/nail/33057ddb2d678031a29bf38fb747a9c1-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d67803bac3ccdd820f3a8e5",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "HIP KITSCH",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "신림점",
+    "coverImage": "/images/nail/33057ddb2d67803bac3ccdd820f3a8e5-cover.webp",
+    "coverWidth": 437,
+    "coverHeight": 280,
+    "detailImages": [
+      "/images/nail/33057ddb2d67803bac3ccdd820f3a8e5-0.webp",
+      "/images/nail/33057ddb2d67803bac3ccdd820f3a8e5-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d67803d9612e7a5837946b4",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "FRIENDS",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "건대점",
+    "coverImage": "/images/nail/33057ddb2d67803d9612e7a5837946b4-cover.webp",
+    "coverWidth": 464,
+    "coverHeight": 217,
+    "detailImages": [
+      "/images/nail/33057ddb2d67803d9612e7a5837946b4-0.webp",
+      "/images/nail/33057ddb2d67803d9612e7a5837946b4-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://a.aliexpress.com/_c3DmN1vb"
+    ]
+  },
+  {
+    "id": "33057ddb2d67803db3c2c222a5a406cb",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "LOVELY",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "발산점",
+    "coverImage": "/images/nail/33057ddb2d67803db3c2c222a5a406cb-cover.webp",
+    "coverWidth": 368,
+    "coverHeight": 161,
+    "detailImages": [
+      "/images/nail/33057ddb2d67803db3c2c222a5a406cb-0.webp",
+      "/images/nail/33057ddb2d67803db3c2c222a5a406cb-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://www.temu.com/jp/goods.html?_bg_fs=1&refer_share_id=BccmqK9KCKw11wHhbUcUZqpZ2TLQyWq1&refer_share_channel=copy_link&from_share=1&share_imessage_opt=1&goods_id=601099822004995&_oak_page_source=417&_oak_region=185&refer_share_suin=RSSBDIYINDE5BPADUJQGA3URJWNCFHX4WZ4D42XQ2PZUB7E6AZRF7YC3PMVU4GDFOCS6WGTWIQ&share_img=https%3A%2F%2Fimg.kwcdn.com%2Fgoods-detail%2F35b7c2%2FyeUWmfsNGd%2Fe709b59a545e43b2be73f701da15e0df.png&share_ui_type=1&_oaksn_=pI5P0NbM57LU5eYoHZJE8Aycp59fu2AQ0JRamvVyUfA%3D"
+    ]
+  },
+  {
+    "id": "33057ddb2d678045b012fd7a3bc230e3",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "FRIENDS",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "발산점",
+    "coverImage": "/images/nail/33057ddb2d678045b012fd7a3bc230e3-cover.webp",
+    "coverWidth": 477,
+    "coverHeight": 228,
+    "detailImages": [
+      "/images/nail/33057ddb2d678045b012fd7a3bc230e3-0.webp",
+      "/images/nail/33057ddb2d678045b012fd7a3bc230e3-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://ko.aliexpress.com/item/1005011738785586.html?invitationCode=NStDVG5DeFl4YlE4WDRuenZIRjR5S2JkWTErWXJNcWZHVXFKakhmZHZSbWVQemFTZUJrNWVWT0s1MU1hdTAyWg&srcSns=sns_KakaoTalk&spreadType=socialShare&social_params=6000429599696&bizType=ProductDetail&spreadCode=NStDVG5DeFl4YlE4WDRuenZIRjR5S2JkWTErWXJNcWZHVXFKakhmZHZSbWVQemFTZUJrNWVWT0s1MU1hdTAyWg&aff_fcid=c5474afd3691446ca8c7ed620a690040-1775894549170-09984-_c3AVp6Ip&tt=MG&aff_fsk=_c3AVp6Ip&aff_platform=default&sk=_c3AVp6Ip&aff_trace_key=c5474afd3691446ca8c7ed620a690040-1775894549170-09984-_c3AVp6Ip&shareId=6000429599696&businessType=ProductDetail&platform=AE&terminal_id=857aed16c4ce447e878bb7dd79509498&afSmartRedirect=y"
+    ]
+  },
+  {
+    "id": "33057ddb2d678045b52dde7fa018f5f6",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "NUANCE",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "강남점",
+    "coverImage": "/images/nail/33057ddb2d678045b52dde7fa018f5f6-cover.webp",
+    "coverWidth": 450,
+    "coverHeight": 199,
+    "detailImages": [
+      "/images/nail/33057ddb2d678045b52dde7fa018f5f6-0.webp",
+      "/images/nail/33057ddb2d678045b52dde7fa018f5f6-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d67804e88cdca50f7194364",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "HIP KITSCH",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "발산점",
+    "coverImage": "/images/nail/33057ddb2d67804e88cdca50f7194364-cover.webp",
+    "coverWidth": 464,
+    "coverHeight": 200,
+    "detailImages": [
+      "/images/nail/33057ddb2d67804e88cdca50f7194364-0.webp",
+      "/images/nail/33057ddb2d67804e88cdca50f7194364-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://www.temu.com/jp/goods.html?_bg_fs=1&refer_share_id=BccmqK9KCKw11wHhbUcUZqpZ2TLQyWq1&refer_share_channel=copy_link&from_share=1&share_imessage_opt=1&goods_id=601099822004995&_oak_page_source=417&_oak_region=185&refer_share_suin=RSSBDIYINDE5BPADUJQGA3URJWNCFHX4WZ4D42XQ2PZUB7E6AZRF7YC3PMVU4GDFOCS6WGTWIQ&share_img=https%3A%2F%2Fimg.kwcdn.com%2Fgoods-detail%2F35b7c2%2FyeUWmfsNGd%2Fe709b59a545e43b2be73f701da15e0df.png&share_ui_type=1&_oaksn_=pI5P0NbM57LU5eYoHZJE8Aycp59fu2AQ0JRamvVyUfA%3D"
+    ]
+  },
+  {
+    "id": "33057ddb2d6780568376ef42421f4021",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "NUANCE",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "강남점",
+    "coverImage": "/images/nail/33057ddb2d6780568376ef42421f4021-cover.webp",
+    "coverWidth": 465,
+    "coverHeight": 199,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780568376ef42421f4021-0.webp",
+      "/images/nail/33057ddb2d6780568376ef42421f4021-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d6780568819cc11ffbe8669",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "FRIENDS",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "홍대점",
+    "coverImage": "/images/nail/33057ddb2d6780568819cc11ffbe8669-cover.webp",
+    "coverWidth": 470,
+    "coverHeight": 211,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780568819cc11ffbe8669-0.webp",
+      "/images/nail/33057ddb2d6780568819cc11ffbe8669-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d678061a478cbd2da1db5dc",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "FRIENDS",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "홍대점",
+    "coverImage": "/images/nail/33057ddb2d678061a478cbd2da1db5dc-cover.webp",
+    "coverWidth": 455,
+    "coverHeight": 220,
+    "detailImages": [
+      "/images/nail/33057ddb2d678061a478cbd2da1db5dc-0.webp",
+      "/images/nail/33057ddb2d678061a478cbd2da1db5dc-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://a.aliexpress.com/_c3NgdZsd",
+      "https://a.aliexpress.com/_c3NgdZsd",
+      "https://m.smartstore.naver.com/searchnailart/products/9885230875",
+      "https://m.smartstore.naver.com/buttervim/products/9251046553"
+    ]
+  },
+  {
+    "id": "33057ddb2d67806fa6d2c1d0fceb8666",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "LOVELY",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "발산점",
+    "coverImage": "/images/nail/33057ddb2d67806fa6d2c1d0fceb8666-cover.webp",
+    "coverWidth": 338,
+    "coverHeight": 159,
+    "detailImages": [
+      "/images/nail/33057ddb2d67806fa6d2c1d0fceb8666-0.webp",
+      "/images/nail/33057ddb2d67806fa6d2c1d0fceb8666-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d67807a9564ec303345ca79",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "NUANCE",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "강남점",
+    "coverImage": "/images/nail/33057ddb2d67807a9564ec303345ca79-cover.webp",
+    "coverWidth": 459,
+    "coverHeight": 205,
+    "detailImages": [
+      "/images/nail/33057ddb2d67807a9564ec303345ca79-0.webp",
+      "/images/nail/33057ddb2d67807a9564ec303345ca79-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d678086bd75cf2a4655929b",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "FRIENDS",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "발산점",
+    "coverImage": "/images/nail/33057ddb2d678086bd75cf2a4655929b-cover.webp",
+    "coverWidth": 467,
+    "coverHeight": 304,
+    "detailImages": [
+      "/images/nail/33057ddb2d678086bd75cf2a4655929b-0.webp",
+      "/images/nail/33057ddb2d678086bd75cf2a4655929b-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d67808c98bfeb80eddfea72",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "HIP KITSCH",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "건대점",
+    "coverImage": "/images/nail/33057ddb2d67808c98bfeb80eddfea72-cover.webp",
+    "coverWidth": 440,
+    "coverHeight": 196,
+    "detailImages": [
+      "/images/nail/33057ddb2d67808c98bfeb80eddfea72-0.webp",
+      "/images/nail/33057ddb2d67808c98bfeb80eddfea72-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d678091974ee50a5b38f330",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "NUANCE",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "강남점",
+    "coverImage": "/images/nail/33057ddb2d678091974ee50a5b38f330-cover.webp",
+    "coverWidth": 443,
+    "coverHeight": 204,
+    "detailImages": [
+      "/images/nail/33057ddb2d678091974ee50a5b38f330-0.webp",
+      "/images/nail/33057ddb2d678091974ee50a5b38f330-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d67809786ecedc096c490ef",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "FRIENDS",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "홍대점",
+    "coverImage": "/images/nail/33057ddb2d67809786ecedc096c490ef-cover.webp",
+    "coverWidth": 454,
+    "coverHeight": 221,
+    "detailImages": [
+      "/images/nail/33057ddb2d67809786ecedc096c490ef-0.webp",
+      "/images/nail/33057ddb2d67809786ecedc096c490ef-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://m.smartstore.naver.com/searchnailart/products/10866653955"
+    ]
+  },
+  {
+    "id": "33057ddb2d67809889a5d2d5fb8872fa",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "LOVELY",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "신림점",
+    "coverImage": "/images/nail/33057ddb2d67809889a5d2d5fb8872fa-cover.webp",
+    "coverWidth": 446,
+    "coverHeight": 324,
+    "detailImages": [
+      "/images/nail/33057ddb2d67809889a5d2d5fb8872fa-0.webp",
+      "/images/nail/33057ddb2d67809889a5d2d5fb8872fa-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d67809ca7eede9abb7712c7",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "HIP KITSCH",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "건대점",
+    "coverImage": "/images/nail/33057ddb2d67809ca7eede9abb7712c7-cover.webp",
+    "coverWidth": 447,
+    "coverHeight": 208,
+    "detailImages": [
+      "/images/nail/33057ddb2d67809ca7eede9abb7712c7-0.webp",
+      "/images/nail/33057ddb2d67809ca7eede9abb7712c7-1.webp",
+      "/images/nail/33057ddb2d67809ca7eede9abb7712c7-2.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://a.aliexpress.com/_c4mVDUhJ",
+      "https://share.temu.com/sPizSLRprVA"
+    ]
+  },
+  {
+    "id": "33057ddb2d6780a29548d4cd4733f7d2",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "LOVELY",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "발산점",
+    "coverImage": "/images/nail/33057ddb2d6780a29548d4cd4733f7d2-cover.webp",
+    "coverWidth": 439,
+    "coverHeight": 306,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780a29548d4cd4733f7d2-0.webp",
+      "/images/nail/33057ddb2d6780a29548d4cd4733f7d2-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d6780a7a43bc895bb984c88",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "HIP KITSCH",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "건대점",
+    "coverImage": "/images/nail/33057ddb2d6780a7a43bc895bb984c88-cover.webp",
+    "coverWidth": 459,
+    "coverHeight": 306,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780a7a43bc895bb984c88-0.webp",
+      "/images/nail/33057ddb2d6780a7a43bc895bb984c88-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d6780a8a7a3ea4971897c15",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "FRIENDS",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "건대점",
+    "coverImage": "/images/nail/33057ddb2d6780a8a7a3ea4971897c15-cover.webp",
+    "coverWidth": 466,
+    "coverHeight": 213,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780a8a7a3ea4971897c15-0.webp",
+      "/images/nail/33057ddb2d6780a8a7a3ea4971897c15-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d6780a8beb1fb3d10e063c7",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "LOVELY",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "발산점",
+    "coverImage": "/images/nail/33057ddb2d6780a8beb1fb3d10e063c7-cover.webp",
+    "coverWidth": 349,
+    "coverHeight": 165,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780a8beb1fb3d10e063c7-0.webp",
+      "/images/nail/33057ddb2d6780a8beb1fb3d10e063c7-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d6780ae844fe428739ac0b9",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "FRIENDS",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "홍대점",
+    "coverImage": "/images/nail/33057ddb2d6780ae844fe428739ac0b9-cover.webp",
+    "coverWidth": 461,
+    "coverHeight": 231,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780ae844fe428739ac0b9-0.webp",
+      "/images/nail/33057ddb2d6780ae844fe428739ac0b9-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://m.smartstore.naver.com/nail-company/products/9012602472?nl-query=%EB%8F%99%EB%AC%BC%ED%91%9C%EC%A0%95%20%EB%84%A4%EC%9D%BC%EC%8A%A4%ED%8B%B0%EC%BB%A4&nl-ts-pid=jOf2awqXKcEmWE3hh4h-060249&NaPm=ct%3Dmnobegyg%7Cci%3D85499bd8db34f7263a01d0edd7ca54c411613814%7Ctr%3Dsls%7Csn%3D3133688%7Chk%3D334139dda082caf830299f186ee51d5ba8b84b3d"
+    ]
+  },
+  {
+    "id": "33057ddb2d6780b288c8ed4f659e55f3",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "HIP KITSCH",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "신림점",
+    "coverImage": "/images/nail/33057ddb2d6780b288c8ed4f659e55f3-cover.webp",
+    "coverWidth": 465,
+    "coverHeight": 288,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780b288c8ed4f659e55f3-0.webp",
+      "/images/nail/33057ddb2d6780b288c8ed4f659e55f3-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d6780bb82f6c3815a830183",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "NUANCE",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "신림점",
+    "coverImage": "/images/nail/33057ddb2d6780bb82f6c3815a830183-cover.webp",
+    "coverWidth": 459,
+    "coverHeight": 211,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780bb82f6c3815a830183-0.webp",
+      "/images/nail/33057ddb2d6780bb82f6c3815a830183-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d6780bb8ba8fd1f9eb4849e",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "LOVELY",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "신림점",
+    "coverImage": "/images/nail/33057ddb2d6780bb8ba8fd1f9eb4849e-cover.webp",
+    "coverWidth": 365,
+    "coverHeight": 158,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780bb8ba8fd1f9eb4849e-0.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d6780ca8aceef8c72e08d5b",
+    "name": "",
+    "category": "NAIL",
+    "theme": "HIP KITSCH",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "발산점",
+    "coverImage": "/images/nail/33057ddb2d6780ca8aceef8c72e08d5b-cover.webp",
+    "coverWidth": 466,
+    "coverHeight": 199,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780ca8aceef8c72e08d5b-0.webp",
+      "/images/nail/33057ddb2d6780ca8aceef8c72e08d5b-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://smartstore.naver.com/searchnailart/products/9877239599?is_retargeting=true&c=260101_p_Naver_product&pid=Naver&deep_link_value=https%3A%2F%2Fsmartstore.naver.com%2Fsearchnailart%2Fproducts%2F9877239599%3Fka_ref%3Dkakao%26ka_req_id%3DgIqq2QF68ssJ9_OLIFs4AQ%26ka_template%3Dcommerce_basic&dtm_source=KK&dtm_detail=gIqq2QF68ssJ9_OLIFs4AQ&dtm_campaign=commerce_basic&dtm_medium=OG"
+    ]
+  },
+  {
+    "id": "33057ddb2d6780ca9322eefee254936c",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "LOVELY",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "발산점",
+    "coverImage": "/images/nail/33057ddb2d6780ca9322eefee254936c-cover.webp",
+    "coverWidth": 458,
+    "coverHeight": 316,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780ca9322eefee254936c-0.webp",
+      "/images/nail/33057ddb2d6780ca9322eefee254936c-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://www.temu.com/jp/goods.html?_bg_fs=1&refer_share_id=BccmqK9KCKw11wHhbUcUZqpZ2TLQyWq1&refer_share_channel=copy_link&from_share=1&share_imessage_opt=1&goods_id=601099822004995&_oak_page_source=417&_oak_region=185&refer_share_suin=RSSBDIYINDE5BPADUJQGA3URJWNCFHX4WZ4D42XQ2PZUB7E6AZRF7YC3PMVU4GDFOCS6WGTWIQ&share_img=https%3A%2F%2Fimg.kwcdn.com%2Fgoods-detail%2F35b7c2%2FyeUWmfsNGd%2Fe709b59a545e43b2be73f701da15e0df.png&share_ui_type=1&_oaksn_=pI5P0NbM57LU5eYoHZJE8Aycp59fu2AQ0JRamvVyUfA%3D"
+    ]
+  },
+  {
+    "id": "33057ddb2d6780d4a087d653d84981ad",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "NUANCE",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "신림점",
+    "coverImage": "/images/nail/33057ddb2d6780d4a087d653d84981ad-cover.webp",
+    "coverWidth": 461,
+    "coverHeight": 206,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780d4a087d653d84981ad-0.webp",
+      "/images/nail/33057ddb2d6780d4a087d653d84981ad-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d6780dca7e5e5618204d680",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "NUANCE",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "신림점",
+    "coverImage": "/images/nail/33057ddb2d6780dca7e5e5618204d680-cover.webp",
+    "coverWidth": 463,
+    "coverHeight": 200,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780dca7e5e5618204d680-0.webp",
+      "/images/nail/33057ddb2d6780dca7e5e5618204d680-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d6780df8bfdcca0ad037570",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "LOVELY",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "발산점",
+    "coverImage": "/images/nail/33057ddb2d6780df8bfdcca0ad037570-cover.webp",
+    "coverWidth": 474,
+    "coverHeight": 247,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780df8bfdcca0ad037570-0.webp",
+      "/images/nail/33057ddb2d6780df8bfdcca0ad037570-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://www.temu.com/jp/goods.html?_bg_fs=1&refer_share_id=BccmqK9KCKw11wHhbUcUZqpZ2TLQyWq1&refer_share_channel=copy_link&from_share=1&share_imessage_opt=1&goods_id=601099822004995&_oak_page_source=417&_oak_region=185&refer_share_suin=RSSBDIYINDE5BPADUJQGA3URJWNCFHX4WZ4D42XQ2PZUB7E6AZRF7YC3PMVU4GDFOCS6WGTWIQ&share_img=https%3A%2F%2Fimg.kwcdn.com%2Fgoods-detail%2F35b7c2%2FyeUWmfsNGd%2Fe709b59a545e43b2be73f701da15e0df.png&share_ui_type=1&_oaksn_=pI5P0NbM57LU5eYoHZJE8Aycp59fu2AQ0JRamvVyUfA%3D"
+    ]
+  },
+  {
+    "id": "33057ddb2d6780df99adc11cd1ccf6f1",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "LOVELY",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "신림점",
+    "coverImage": "/images/nail/33057ddb2d6780df99adc11cd1ccf6f1-cover.webp",
+    "coverWidth": 358,
+    "coverHeight": 172,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780df99adc11cd1ccf6f1-0.webp",
+      "/images/nail/33057ddb2d6780df99adc11cd1ccf6f1-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d6780e29cd6c6cf8414a3c3",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "HIP KITSCH",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "발산점",
+    "coverImage": "/images/nail/33057ddb2d6780e29cd6c6cf8414a3c3-cover.webp",
+    "coverWidth": 419,
+    "coverHeight": 193,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780e29cd6c6cf8414a3c3-0.webp",
+      "/images/nail/33057ddb2d6780e29cd6c6cf8414a3c3-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://smartstore.naver.com/searchnailart/products/9620079041"
+    ]
+  },
+  {
+    "id": "33057ddb2d6780e69f30c9a658a99fbd",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "FRIENDS",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "건대점",
+    "coverImage": "/images/nail/33057ddb2d6780e69f30c9a658a99fbd-cover.webp",
+    "coverWidth": 460,
+    "coverHeight": 298,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780e69f30c9a658a99fbd-0.webp",
+      "/images/nail/33057ddb2d6780e69f30c9a658a99fbd-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://a.aliexpress.com/_c3rnjknP",
+      "https://naver.me/5su9FT5E"
+    ]
+  },
+  {
+    "id": "33057ddb2d6780e8b45ce4efc93ba68f",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "LOVELY",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "발산점",
+    "coverImage": "/images/nail/33057ddb2d6780e8b45ce4efc93ba68f-cover.webp",
+    "coverWidth": 437,
+    "coverHeight": 299,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780e8b45ce4efc93ba68f-0.webp",
+      "/images/nail/33057ddb2d6780e8b45ce4efc93ba68f-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33057ddb2d6780ecb7f3c8f67201f065",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "HIP KITSCH",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "건대점",
+    "coverImage": "/images/nail/33057ddb2d6780ecb7f3c8f67201f065-cover.webp",
+    "coverWidth": 449,
+    "coverHeight": 228,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780ecb7f3c8f67201f065-0.webp",
+      "/images/nail/33057ddb2d6780ecb7f3c8f67201f065-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://share.temu.com/9v5ykwFVW2A"
+    ]
+  },
+  {
+    "id": "33057ddb2d6780f19f37f5f695e3ef6d",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "HIP KITSCH",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "건대점",
+    "coverImage": "/images/nail/33057ddb2d6780f19f37f5f695e3ef6d-cover.webp",
+    "coverWidth": 462,
+    "coverHeight": 299,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780f19f37f5f695e3ef6d-0.webp",
+      "/images/nail/33057ddb2d6780f19f37f5f695e3ef6d-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://a.aliexpress.com/_c36WeQhf",
+      "https://a.aliexpress.com/_c4edVcHX",
+      "https://a.aliexpress.com/_c2ItEd9x"
+    ]
+  },
+  {
+    "id": "33057ddb2d6780f59e5ec04a07757e51",
+    "name": "",
+    "category": "NAIL",
+    "theme": "LOVELY",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "발산점",
+    "coverImage": "/images/nail/33057ddb2d6780f59e5ec04a07757e51-cover.webp",
+    "coverWidth": 467,
+    "coverHeight": 239,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780f59e5ec04a07757e51-0.webp",
+      "/images/nail/33057ddb2d6780f59e5ec04a07757e51-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://www.temu.com/jp/goods.html?_bg_fs=1&refer_share_id=BccmqK9KCKw11wHhbUcUZqpZ2TLQyWq1&refer_share_channel=copy_link&from_share=1&share_imessage_opt=1&goods_id=601099822004995&_oak_page_source=417&_oak_region=185&refer_share_suin=RSSBDIYINDE5BPADUJQGA3URJWNCFHX4WZ4D42XQ2PZUB7E6AZRF7YC3PMVU4GDFOCS6WGTWIQ&share_img=https%3A%2F%2Fimg.kwcdn.com%2Fgoods-detail%2F35b7c2%2FyeUWmfsNGd%2Fe709b59a545e43b2be73f701da15e0df.png&share_ui_type=1&_oaksn_=pI5P0NbM57LU5eYoHZJE8Aycp59fu2AQ0JRamvVyUfA%3D"
+    ]
+  },
+  {
+    "id": "33057ddb2d6780ffa4d3e0644e10196f",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "HIP KITSCH",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "건대점",
+    "coverImage": "/images/nail/33057ddb2d6780ffa4d3e0644e10196f-cover.webp",
+    "coverWidth": 457,
+    "coverHeight": 222,
+    "detailImages": [
+      "/images/nail/33057ddb2d6780ffa4d3e0644e10196f-0.webp",
+      "/images/nail/33057ddb2d6780ffa4d3e0644e10196f-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33b57ddb2d6780278f71c52952e4bd39",
+    "name": "  ",
+    "category": "NAIL",
+    "theme": "NUANCE",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "강남점",
+    "coverImage": "/images/nail/33b57ddb2d6780278f71c52952e4bd39-cover.webp",
+    "coverWidth": 451,
+    "coverHeight": 203,
+    "detailImages": [
+      "/images/nail/33b57ddb2d6780278f71c52952e4bd39-0.webp",
+      "/images/nail/33b57ddb2d6780278f71c52952e4bd39-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33b57ddb2d67806188a4e7f0bf5cc34c",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "NUANCE",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "강남점",
+    "coverImage": "/images/nail/33b57ddb2d67806188a4e7f0bf5cc34c-cover.webp",
+    "coverWidth": 446,
+    "coverHeight": 212,
+    "detailImages": [
+      "/images/nail/33b57ddb2d67806188a4e7f0bf5cc34c-0.webp",
+      "/images/nail/33b57ddb2d67806188a4e7f0bf5cc34c-1.webp",
+      "/images/nail/33b57ddb2d67806188a4e7f0bf5cc34c-2.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33c57ddb2d67801ea123e28b19f65da6",
+    "name": " ",
+    "category": "PEDI",
+    "theme": "",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "홍대점",
+    "coverImage": "/images/nail/33c57ddb2d67801ea123e28b19f65da6-cover.webp",
+    "coverWidth": 243,
+    "coverHeight": 147,
+    "detailImages": [
+      "/images/nail/33c57ddb2d67801ea123e28b19f65da6-0.webp",
+      "/images/nail/33c57ddb2d67801ea123e28b19f65da6-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33c57ddb2d6780268039ff2a078f4468",
+    "name": " ",
+    "category": "PEDI",
+    "theme": "",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "발산점",
+    "coverImage": "/images/nail/33c57ddb2d6780268039ff2a078f4468-cover.webp",
+    "coverWidth": 254,
+    "coverHeight": 142,
+    "detailImages": [
+      "/images/nail/33c57ddb2d6780268039ff2a078f4468-0.webp",
+      "/images/nail/33c57ddb2d6780268039ff2a078f4468-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33c57ddb2d67802e9ce2faa33861b951",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "NUANCE",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "강남점",
+    "coverImage": "/images/nail/33c57ddb2d67802e9ce2faa33861b951-cover.webp",
+    "coverWidth": 467,
+    "coverHeight": 222,
+    "detailImages": [
+      "/images/nail/33c57ddb2d67802e9ce2faa33861b951-0.webp",
+      "/images/nail/33c57ddb2d67802e9ce2faa33861b951-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33c57ddb2d67804ab026c60be4628d04",
+    "name": " ",
+    "category": "PEDI",
+    "theme": "",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "건대점",
+    "coverImage": "/images/nail/33c57ddb2d67804ab026c60be4628d04-cover.webp",
+    "coverWidth": 244,
+    "coverHeight": 154,
+    "detailImages": [
+      "/images/nail/33c57ddb2d67804ab026c60be4628d04-0.webp",
+      "/images/nail/33c57ddb2d67804ab026c60be4628d04-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33c57ddb2d678068b687f975c917da2e",
+    "name": " ",
+    "category": "PEDI",
+    "theme": "",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "홍대점",
+    "coverImage": "/images/nail/33c57ddb2d678068b687f975c917da2e-cover.webp",
+    "coverWidth": 253,
+    "coverHeight": 141,
+    "detailImages": [
+      "/images/nail/33c57ddb2d678068b687f975c917da2e-0.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33c57ddb2d67806eb00bf8da0f8328ae",
+    "name": " ",
+    "category": "PEDI",
+    "theme": "",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "홍대점",
+    "coverImage": "/images/nail/33c57ddb2d67806eb00bf8da0f8328ae-cover.webp",
+    "coverWidth": 266,
+    "coverHeight": 151,
+    "detailImages": [
+      "/images/nail/33c57ddb2d67806eb00bf8da0f8328ae-0.webp",
+      "/images/nail/33c57ddb2d67806eb00bf8da0f8328ae-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33c57ddb2d67807d8778e92311023a11",
+    "name": " ",
+    "category": "PEDI",
+    "theme": "",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "홍대점",
+    "coverImage": "/images/nail/33c57ddb2d67807d8778e92311023a11-cover.webp",
+    "coverWidth": 272,
+    "coverHeight": 139,
+    "detailImages": [
+      "/images/nail/33c57ddb2d67807d8778e92311023a11-0.webp",
+      "/images/nail/33c57ddb2d67807d8778e92311023a11-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33c57ddb2d678088bf54f3e53f13d78d",
+    "name": " ",
+    "category": "PEDI",
+    "theme": "",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "신림점",
+    "coverImage": "/images/nail/33c57ddb2d678088bf54f3e53f13d78d-cover.webp",
+    "coverWidth": 246,
+    "coverHeight": 140,
+    "detailImages": [
+      "/images/nail/33c57ddb2d678088bf54f3e53f13d78d-0.webp",
+      "/images/nail/33c57ddb2d678088bf54f3e53f13d78d-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33c57ddb2d67808b94eee8de9fecd07e",
+    "name": " ",
+    "category": "PEDI",
+    "theme": "",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "홍대점",
+    "coverImage": "/images/nail/33c57ddb2d67808b94eee8de9fecd07e-cover.webp",
+    "coverWidth": 253,
+    "coverHeight": 144,
+    "detailImages": [
+      "/images/nail/33c57ddb2d67808b94eee8de9fecd07e-0.webp",
+      "/images/nail/33c57ddb2d67808b94eee8de9fecd07e-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33c57ddb2d6780ad837df7bf3aae9384",
+    "name": " ",
+    "category": "PEDI",
+    "theme": "",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "홍대점",
+    "coverImage": "/images/nail/33c57ddb2d6780ad837df7bf3aae9384-cover.webp",
+    "coverWidth": 224,
+    "coverHeight": 134,
+    "detailImages": [
+      "/images/nail/33c57ddb2d6780ad837df7bf3aae9384-0.webp",
+      "/images/nail/33c57ddb2d6780ad837df7bf3aae9384-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://www.danjinail.co.kr/goods/goods_view.php?goodsNo=1000006244"
+    ]
+  },
+  {
+    "id": "33c57ddb2d6780b390f5cb0e8cc79caf",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "NUANCE",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "강남점",
+    "coverImage": "/images/nail/33c57ddb2d6780b390f5cb0e8cc79caf-cover.webp",
+    "coverWidth": 470,
+    "coverHeight": 193,
+    "detailImages": [
+      "/images/nail/33c57ddb2d6780b390f5cb0e8cc79caf-0.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33c57ddb2d6780b993b7df8d8f424fe6",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "NUANCE",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "강남점",
+    "coverImage": "/images/nail/33c57ddb2d6780b993b7df8d8f424fe6-cover.webp",
+    "coverWidth": 454,
+    "coverHeight": 205,
+    "detailImages": [
+      "/images/nail/33c57ddb2d6780b993b7df8d8f424fe6-0.webp",
+      "/images/nail/33c57ddb2d6780b993b7df8d8f424fe6-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33c57ddb2d6780e4830ce58b65b658d0",
+    "name": " ",
+    "category": "PEDI",
+    "theme": "",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "발산점",
+    "coverImage": "/images/nail/33c57ddb2d6780e4830ce58b65b658d0-cover.webp",
+    "coverWidth": 230,
+    "coverHeight": 137,
+    "detailImages": [
+      "/images/nail/33c57ddb2d6780e4830ce58b65b658d0-0.webp",
+      "/images/nail/33c57ddb2d6780e4830ce58b65b658d0-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "33c57ddb2d6780fbb418d48855dbde7a",
+    "name": " ",
+    "category": "PEDI",
+    "theme": "",
+    "price": "39아트",
+    "season": "2605",
+    "artist": "건대점",
+    "coverImage": "/images/nail/33c57ddb2d6780fbb418d48855dbde7a-cover.webp",
+    "coverWidth": 229,
+    "coverHeight": 141,
+    "detailImages": [
+      "/images/nail/33c57ddb2d6780fbb418d48855dbde7a-0.webp",
+      "/images/nail/33c57ddb2d6780fbb418d48855dbde7a-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
+    "id": "34157ddb2d67808f870fefc33dc3cf2d",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "FRIENDS",
+    "price": "59아트",
+    "season": "2605",
+    "artist": "홍대점",
+    "coverImage": "/images/nail/34157ddb2d67808f870fefc33dc3cf2d-cover.webp",
+    "coverWidth": 466,
+    "coverHeight": 226,
+    "detailImages": [
+      "/images/nail/34157ddb2d67808f870fefc33dc3cf2d-0.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://m.smartstore.naver.com/nailzonemall/products/7856256362?nl-query=%ED%8F%BC%ED%8F%BC%ED%91%B8%EB%A6%B0%20%EB%84%A4%EC%9D%BC%ED%8C%8C%EC%B8%A0&nl-ts-pid=jOfDWsqXKcEX6E36qis-186578&NaPm=ct%3Dmno8wme0%7Cci%3D9dc467b557d3658cabace1846a52fc04525a3b3f%7Ctr%3Dsls%7Csn%3D944921%7Chk%3D9518a7596f1003126e56d95107461d37bc818261"
+    ]
   }
 ]
