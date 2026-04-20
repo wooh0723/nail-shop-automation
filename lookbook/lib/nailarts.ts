@@ -4,11 +4,14 @@ import { join } from "path";
 export interface NailArt {
   id: string;
   name: string;
+  category: string;
   theme: string;
   price: string;
   season: string;
   artist: string;
   coverImage: string;
+  coverWidth: number;
+  coverHeight: number;
   detailImages: string[];
   materials: string[];
   purchaseLinks: string[];

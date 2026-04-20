@@ -29,11 +29,14 @@ const OUT_IMAGES = path.join(process.cwd(), "public/images/nail");
 interface NailArt {
   id: string;
   name: string;
+  category: string;
   theme: string;
   price: string;
   season: string;
   artist: string;
   coverImage: string;
+  coverWidth: number;
+  coverHeight: number;
   detailImages: string[];
   materials: string[];
   purchaseLinks: string[];
@@ -57,30 +60,24 @@ function downloadToBuffer(url: string): Promise<Buffer> {
 }
 
 /** 가로 750px 리사이즈 + WebP 변환 (상세 이미지용) */
-async function processImage(buf: Buffer, dest: string): Promise<void> {
-  await sharp(buf)
+async function processImage(buf: Buffer, dest: string): Promise<{ width: number; height: number }> {
+  const { width, height } = await sharp(buf)
     .resize({ width: 750 })
     .webp({ quality: 85 })
     .toFile(dest);
+  return { width, height };
 }
 
-/** 커버 이미지: 가로 750px 리사이즈 + 가격대별 크롭 + WebP 변환 */
+/** 커버 이미지: 가로 750px 리사이즈 + WebP 변환 (크롭 없이 원본 비율 보존) */
 async function processCoverImage(
   buf: Buffer,
-  dest: string,
-  price: string
-): Promise<void> {
-  const WIDTH = 750;
-  // 79아트: 5:2.5 (top gravity), 그 외: 5:2 (center gravity)
-  const is79 = price === "79아트";
-  const ratio = is79 ? 5 / 2.5 : 5 / 2;
-  const height = Math.round(WIDTH / ratio);
-  const position = is79 ? "top" : "centre";
-
-  await sharp(buf)
-    .resize({ width: WIDTH, height, fit: "cover", position })
+  dest: string
+): Promise<{ width: number; height: number }> {
+  const { width, height } = await sharp(buf)
+    .resize({ width: 750, withoutEnlargement: true })
     .webp({ quality: 85 })
     .toFile(dest);
+  return { width, height };
 }
 
 function getSelectValue(prop: any): string {
@@ -135,6 +132,8 @@ async function processPage(page: PageObjectResponse): Promise<NailArt> {
 
   // Cover image
   let coverImage = "";
+  let coverWidth = 0;
+  let coverHeight = 0;
   const coverUrl =
     page.cover?.type === "external"
       ? page.cover.external.url
@@ -142,14 +141,14 @@ async function processPage(page: PageObjectResponse): Promise<NailArt> {
       ? page.cover.file.url
       : null;
 
-  const price = getSelectValue(props["가격"]);
-
   if (coverUrl) {
     const coverDest = path.join(OUT_IMAGES, `${pageId}-cover.webp`);
     try {
       const buf = await downloadToBuffer(coverUrl);
-      await processCoverImage(buf, coverDest, price);
+      const dims = await processCoverImage(buf, coverDest);
       coverImage = `/images/nail/${pageId}-cover.webp`;
+      coverWidth = dims.width;
+      coverHeight = dims.height;
     } catch (e) {
       console.warn(`  cover 다운로드 실패: ${pageId}`, e);
     }
@@ -161,6 +160,7 @@ async function processPage(page: PageObjectResponse): Promise<NailArt> {
   const materials: string[] = [];
   const purchaseLinks: string[] = [];
 
+  const detailImageDims: { url: string; width: number; height: number }[] = [];
   let imgIndex = 0;
   for (const block of blocks) {
     if (block.type === "image") {
@@ -172,8 +172,10 @@ async function processPage(page: PageObjectResponse): Promise<NailArt> {
       const dest = path.join(OUT_IMAGES, `${pageId}-${imgIndex}.webp`);
       try {
         const buf = await downloadToBuffer(imgUrl);
-        await processImage(buf, dest);
-        detailImages.push(`/images/nail/${pageId}-${imgIndex}.webp`);
+        const dims = await processImage(buf, dest);
+        const url = `/images/nail/${pageId}-${imgIndex}.webp`;
+        detailImages.push(url);
+        detailImageDims.push({ url, width: dims.width, height: dims.height });
         imgIndex++;
       } catch (e) {
         console.warn(`  이미지 다운로드 실패: ${pageId}-${imgIndex}`, e);
@@ -197,11 +199,14 @@ async function processPage(page: PageObjectResponse): Promise<NailArt> {
   return {
     id: pageId,
     name: getTitle(props["이름"]),
+    category: getSelectValue(props["구분"]) || "NAIL",
     theme: getSelectValue(props["테마"]),
     price: getSelectValue(props["가격"]),
     season: getSelectValue(props["시기"]),
     artist: getSelectValue(props["제안자"]),
     coverImage,
+    coverWidth,
+    coverHeight,
     detailImages,
     materials,
     purchaseLinks,

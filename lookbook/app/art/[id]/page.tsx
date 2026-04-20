@@ -34,11 +34,11 @@ export default async function ArtPage({
             <Image
               src={art.coverImage}
               alt={art.name || "네일아트"}
-              width={750}
-              height={750}
+              width={art.coverWidth > 0 ? art.coverWidth : 750}
+              height={art.coverHeight > 0 ? art.coverHeight : 750}
               sizes="390px"
               quality={85}
-              className="w-full object-cover"
+              className="h-auto w-full"
               priority
             />
           </div>
@@ -50,6 +50,7 @@ export default async function ArtPage({
             {art.name || "\u2014"}
           </h1>
           <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[11px] tracking-wide text-[#aaa]">
+            {art.category && <span>{art.category}</span>}
             {art.theme && <span>{art.theme}</span>}
             {art.price && <span>{art.price}</span>}
             {art.season && <span>{art.season}</span>}

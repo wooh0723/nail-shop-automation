@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import type { NailArt } from "@/lib/nailarts";
 import NailArtCard from "./NailArtCard";
+import CategoryToggle, { type Category } from "./CategoryToggle";
 import ThemeTabs, { THEMES, type Theme } from "./ThemeTabs";
 import PriceSwiper, { PRICES, type PriceIndex } from "./PriceSwiper";
 
@@ -19,12 +20,18 @@ export default function LookbookClient({
   arts: NailArt[];
   seasons: string[];
 }) {
+  const [category, setCategory] = useState<Category>("NAIL");
   const [theme, setTheme] = useState<Theme>(THEMES[0]);
   const [priceIndex, setPriceIndex] = useState<PriceIndex>(0);
   const [activeSeason, setActiveSeason] = useState<string>(seasons[0] ?? "");
   const [seasonOpen, setSeasonOpen] = useState(false);
   const [contentKey, setContentKey] = useState(0);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  function handleCategoryChange(next: Category) {
+    setCategory(next);
+    setContentKey((k) => k + 1);
+  }
 
   function handleThemeChange(next: Theme) {
     setTheme(next);
@@ -59,14 +66,15 @@ export default function LookbookClient({
 
   const filtered = arts.filter(
     (art) =>
-      art.theme === theme &&
+      art.category === category &&
+      (category === "PEDI" || art.theme === theme) &&
       art.price === PRICES[priceIndex] &&
       (activeSeason ? art.season === activeSeason : true)
   );
 
   return (
     <div>
-      {/* Header — space-between: left brand + title, right "N월 ▾" */}
+      {/* Header — brand + season */}
       <header className="mb-3 flex items-baseline justify-between">
         <span
           className="text-[20px] font-extralight tracking-tight text-[#bbb] uppercase"
@@ -119,9 +127,12 @@ export default function LookbookClient({
         </div>
       </header>
 
-      <ThemeTabs active={theme} onChange={handleThemeChange} />
-
-      <div className="h-px bg-[#e8e8e8]" />
+      {category === "NAIL" && (
+        <>
+          <ThemeTabs active={theme} onChange={handleThemeChange} />
+          <div className="h-px bg-[#e8e8e8]" />
+        </>
+      )}
 
       <PriceSwiper priceIndex={priceIndex} onChange={handlePriceChange}>
         {filtered.length > 0 ? (
@@ -141,6 +152,12 @@ export default function LookbookClient({
           </div>
         )}
       </PriceSwiper>
+
+      <div className="pointer-events-none fixed inset-x-0 bottom-4 z-30 flex justify-center">
+        <div className="pointer-events-auto">
+          <CategoryToggle active={category} onChange={handleCategoryChange} />
+        </div>
+      </div>
     </div>
   );
 }
