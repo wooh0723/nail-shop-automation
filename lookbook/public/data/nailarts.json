@@ -2127,5 +2127,26 @@
     "purchaseLinks": [
       "https://m.smartstore.naver.com/nailzonemall/products/7856256362?nl-query=%ED%8F%BC%ED%8F%BC%ED%91%B8%EB%A6%B0%20%EB%84%A4%EC%9D%BC%ED%8C%8C%EC%B8%A0&nl-ts-pid=jOfDWsqXKcEX6E36qis-186578&NaPm=ct%3Dmno8wme0%7Cci%3D9dc467b557d3658cabace1846a52fc04525a3b3f%7Ctr%3Dsls%7Csn%3D944921%7Chk%3D9518a7596f1003126e56d95107461d37bc818261"
     ]
+  },
+  {
+    "id": "34a57ddb2d6780b0af91f3a845046e3c",
+    "name": " ",
+    "category": "NAIL",
+    "theme": "HIP KITSCH",
+    "price": "79아트",
+    "season": "2604",
+    "artist": "건대점",
+    "coverImage": "/images/nail/34a57ddb2d6780b0af91f3a845046e3c-cover.webp",
+    "coverWidth": 441,
+    "coverHeight": 248,
+    "detailImages": [
+      "/images/nail/34a57ddb2d6780b0af91f3a845046e3c-0.webp",
+      "/images/nail/34a57ddb2d6780b0af91f3a845046e3c-1.webp",
+      "/images/nail/34a57ddb2d6780b0af91f3a845046e3c-2.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": [
+      "https://njoyk.com/product/%ED%94%8C%EB%9D%BC%EC%9B%8C-%EC%8A%A4%EC%BC%88%EB%A0%88%ED%86%A4-%ED%81%AC%EB%A1%9C%EC%8A%A4-%EB%A9%94%ED%83%88-%ED%8C%8C%EC%B8%A010%EA%B0%9C%EC%9E%85np-457/1168/category/71/display/1/"
+    ]
   }
 ]
