@@ -28,7 +28,7 @@ export default function BookPage() {
         </span>
         <header className="mb-12">
           <h1 className="font-['Cormorant_Garamond'] text-4xl font-light tracking-tight">
-            디자인 시술 사전 접수
+            아트/디자인 사전 접수
           </h1>
           <p className="mt-3 text-sm leading-relaxed text-foreground/70">
             오시기 전 어떤 디자인을 원하시는지 알려주세요.

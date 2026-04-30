@@ -20,9 +20,11 @@ function formatSeason(s: string): string {
 export default function LookbookClient({
   arts,
   seasons,
+  initialSelectMode = false,
 }: {
   arts: NailArt[];
   seasons: string[];
+  initialSelectMode?: boolean;
 }) {
   const router = useRouter();
   const { patch } = useBookingDraft();
@@ -33,16 +35,9 @@ export default function LookbookClient({
   const [activeSeason, setActiveSeason] = useState<string>(seasons[0] ?? "");
   const [seasonOpen, setSeasonOpen] = useState(false);
   const [contentKey, setContentKey] = useState(0);
-  const [selectMode, setSelectMode] = useState(false);
+  const [selectMode] = useState(initialSelectMode);
   const [selectedArt, setSelectedArt] = useState<NailArt | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
-
-  // Detect ?mode=select on the client to keep the page statically prerendered.
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    const sp = new URLSearchParams(window.location.search);
-    setSelectMode(sp.get("mode") === "select");
-  }, []);
 
   function handleCategoryChange(next: Category) {
     setCategory(next);

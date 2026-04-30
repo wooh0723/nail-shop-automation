@@ -51,9 +51,11 @@ export default function NailArtCard({ art, onClick }: Props) {
           </div>
         )}
       </div>
-      <p className="mt-2.5 truncate text-[13px] font-medium tracking-tight text-[#0a0a0a]">
-        {art.name || "—"}
-      </p>
+      {!onClick && (
+        <p className="mt-2.5 truncate text-[13px] font-medium tracking-tight text-[#0a0a0a]">
+          {art.name || "—"}
+        </p>
+      )}
     </>
   );
 
