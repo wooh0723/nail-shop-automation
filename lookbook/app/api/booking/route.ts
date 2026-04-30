@@ -10,45 +10,17 @@ export const dynamic = "force-dynamic";
 
 const yesNo = z.enum(["yes", "no"]);
 
-const precheckPayloadSchema = z
-  .object({
-    gelRemoval: yesNo,
-    hasExtension: yesNo.optional(),
-    hasPartsToRemove: yesNo.optional(),
-    handPhoto: z
-      .object({
-        fileUploadId: z.string().min(1),
-        filename: z.string(),
-      })
-      .optional(),
-  })
-  .superRefine((val, ctx) => {
-    if (val.gelRemoval === "yes") {
-      if (!val.hasExtension) {
-        ctx.addIssue({
-          code: z.ZodIssueCode.custom,
-          path: ["hasExtension"],
-          message: "필수",
-        });
-      }
-      if (!val.hasPartsToRemove) {
-        ctx.addIssue({
-          code: z.ZodIssueCode.custom,
-          path: ["hasPartsToRemove"],
-          message: "필수",
-        });
-      }
-      const needsPhoto =
-        val.hasExtension === "yes" || val.hasPartsToRemove === "yes";
-      if (needsPhoto && !val.handPhoto) {
-        ctx.addIssue({
-          code: z.ZodIssueCode.custom,
-          path: ["handPhoto"],
-          message: "필수",
-        });
-      }
-    }
-  });
+const precheckPayloadSchema = z.object({
+  gelRemoval: yesNo.optional(),
+  hasExtension: yesNo.optional(),
+  hasPartsToRemove: yesNo.optional(),
+  handPhoto: z
+    .object({
+      fileUploadId: z.string().min(1),
+      filename: z.string(),
+    })
+    .optional(),
+});
 
 const draftSchema = z.discriminatedUnion("track", [
   z.object({
@@ -122,11 +94,15 @@ export async function POST(req: NextRequest) {
     유형: {
       select: { name: draft.track === "existing" ? "이달아" : "타샵디자인" },
     },
-    지점: { select: { name: draft.contact.branch } },
     고객명: { rich_text: [{ text: { content: draft.contact.name } }] },
     연락처: { phone_number: draft.contact.phone },
-    방문일자: { date: { start: draft.contact.visitDate } },
   };
+  if (draft.contact.branch) {
+    props["지점"] = { select: { name: draft.contact.branch } };
+  }
+  if (draft.contact.visitDate) {
+    props["방문일자"] = { date: { start: draft.contact.visitDate } };
+  }
   const precheckLine = formatPrecheck(draft.precheck);
   const memoCombined = [precheckLine, draft.contact.memo]
     .filter((s): s is string => !!s && s.length > 0)
@@ -225,6 +201,7 @@ export async function POST(req: NextRequest) {
 
 function formatPrecheck(p: z.infer<typeof precheckPayloadSchema>): string {
   const yn = (v: "yes" | "no" | undefined) => (v === "yes" ? "O" : "X");
-  if (p.gelRemoval !== "yes") return "[사전확인] 젤제거 X";
+  if (!p.gelRemoval) return "";
+  if (p.gelRemoval === "no") return "[사전확인] 젤제거 X";
   return `[사전확인] 젤제거 O / 연장 ${yn(p.hasExtension)} / 파츠 ${yn(p.hasPartsToRemove)}`;
 }

@@ -11,54 +11,22 @@ const handPhotoSchema = z.object({
   previewDataUrl: z.string().optional(),
 });
 
-export const precheckSchema = z
-  .object({
-    gelRemoval: yesNo.optional(),
-    hasExtension: yesNo.optional(),
-    hasPartsToRemove: yesNo.optional(),
-    handPhoto: handPhotoSchema.optional(),
-  })
-  .superRefine((val, ctx) => {
-    if (!val.gelRemoval) {
-      ctx.addIssue({
-        code: z.ZodIssueCode.custom,
-        path: ["gelRemoval"],
-        message: "선택해주세요",
-      });
-      return;
-    }
-    if (val.gelRemoval === "yes") {
-      if (!val.hasExtension) {
-        ctx.addIssue({
-          code: z.ZodIssueCode.custom,
-          path: ["hasExtension"],
-          message: "선택해주세요",
-        });
-      }
-      if (!val.hasPartsToRemove) {
-        ctx.addIssue({
-          code: z.ZodIssueCode.custom,
-          path: ["hasPartsToRemove"],
-          message: "선택해주세요",
-        });
-      }
-      const needsPhoto =
-        val.hasExtension === "yes" || val.hasPartsToRemove === "yes";
-      if (needsPhoto && !val.handPhoto) {
-        ctx.addIssue({
-          code: z.ZodIssueCode.custom,
-          path: ["handPhoto"],
-          message: "현재 손사진을 첨부해주세요",
-        });
-      }
-    }
-  });
+export const precheckSchema = z.object({
+  gelRemoval: yesNo.optional(),
+  hasExtension: yesNo.optional(),
+  hasPartsToRemove: yesNo.optional(),
+  handPhoto: handPhotoSchema.optional(),
+});
 
 // Schema for the bare contact fields (used by /api/booking).
+// Only name/phone are required; everything else is optional.
 export const contactSchema = z.object({
-  branch: z.enum([...BRANCHES] as [Branch, ...Branch[]], {
-    message: "지점을 선택해주세요",
-  }),
+  branch: z
+    .union([
+      z.enum([...BRANCHES] as [Branch, ...Branch[]]),
+      z.literal(""),
+    ])
+    .optional(),
   name: z
     .string()
     .trim()
@@ -72,8 +40,8 @@ export const contactSchema = z.object({
       "휴대폰 번호 형식이 아닙니다 (예: 010-1234-5678)"
     ),
   visitDate: z
-    .string()
-    .regex(/^\d{4}-\d{2}-\d{2}$/, "방문 예정일을 선택해주세요"),
+    .union([z.string().regex(/^\d{4}-\d{2}-\d{2}$/), z.literal("")])
+    .optional(),
   memo: z.string().max(500, "메모는 500자 이내로 입력해주세요").optional(),
 });
 

@@ -119,9 +119,11 @@ export default function PrecheckSection({
   return (
     <section className="mb-6 rounded-2xl border border-foreground/10 p-4">
       <header className="mb-3">
-        <h2 className="text-[13px] font-medium tracking-tight">예약 전 확인</h2>
+        <h2 className="text-[13px] font-medium tracking-tight">
+          예약 전 확인 <span className="text-foreground/40">(선택)</span>
+        </h2>
         <p className="mt-1 text-[11px] text-foreground/50">
-          시술 시간 확인을 위해 꼭 응답해주세요.
+          시술 시간 확인에 도움이 돼요.
         </p>
       </header>
 

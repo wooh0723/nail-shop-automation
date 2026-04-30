@@ -131,33 +131,39 @@ function ContactForm({
     setSubmitError(null);
 
     const cleanContact = {
-      branch: values.branch,
+      branch: (values.branch ?? "") as Branch | "",
       name: values.name.trim(),
       phone: values.phone.trim(),
-      visitDate: values.visitDate,
+      visitDate: values.visitDate ?? "",
       memo: values.memo?.trim() ?? "",
     };
-    // Drop hidden answers: when gelRemoval=no, follow-ups + photo are irrelevant.
-    // When both follow-ups=no, the photo is irrelevant.
+    // Precheck is fully optional now. Send only the answers actually provided;
+    // hidden follow-ups (gelRemoval=no/blank) are dropped.
     const precheckRaw = values.precheck;
     const cleanPrecheck =
       precheckRaw.gelRemoval === "yes"
         ? {
             gelRemoval: "yes" as const,
-            hasExtension: precheckRaw.hasExtension!,
-            hasPartsToRemove: precheckRaw.hasPartsToRemove!,
-            handPhoto:
-              precheckRaw.hasExtension === "yes" ||
-              precheckRaw.hasPartsToRemove === "yes"
-                ? precheckRaw.handPhoto
-                  ? {
-                      fileUploadId: precheckRaw.handPhoto.fileUploadId,
-                      filename: precheckRaw.handPhoto.filename,
-                    }
-                  : undefined
-                : undefined,
+            ...(precheckRaw.hasExtension
+              ? { hasExtension: precheckRaw.hasExtension }
+              : {}),
+            ...(precheckRaw.hasPartsToRemove
+              ? { hasPartsToRemove: precheckRaw.hasPartsToRemove }
+              : {}),
+            ...((precheckRaw.hasExtension === "yes" ||
+              precheckRaw.hasPartsToRemove === "yes") &&
+            precheckRaw.handPhoto
+              ? {
+                  handPhoto: {
+                    fileUploadId: precheckRaw.handPhoto.fileUploadId,
+                    filename: precheckRaw.handPhoto.filename,
+                  },
+                }
+              : {}),
           }
-        : { gelRemoval: "no" as const };
+        : precheckRaw.gelRemoval === "no"
+        ? { gelRemoval: "no" as const }
+        : {};
     patch({ contact: cleanContact });
 
     const payload =
@@ -247,7 +253,7 @@ function ContactForm({
               htmlFor="branch"
               className="mb-2 block text-sm text-foreground/70"
             >
-              지점
+              지점 <span className="text-foreground/40">(선택)</span>
             </label>
             <div className="relative">
               <select
@@ -327,7 +333,7 @@ function ContactForm({
               htmlFor="visitDate"
               className="mb-2 block text-sm text-foreground/70"
             >
-              방문 예정일
+              방문 예정일 <span className="text-foreground/40">(선택)</span>
             </label>
             <input
               id="visitDate"
