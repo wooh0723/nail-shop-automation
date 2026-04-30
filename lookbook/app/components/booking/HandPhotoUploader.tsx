@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import type { HandPhoto } from "@/lib/booking/types";
-import { makeThumbnail } from "@/lib/booking/imageThumbnail";
+import { makeThumbnail, resizeForUpload } from "@/lib/booking/imageThumbnail";
 
 const MAX_BYTES = 20 * 1024 * 1024;
 const ACCEPT = "image/jpeg,image/png,image/webp,image/heic,image/heif";
@@ -34,8 +34,9 @@ export default function HandPhotoUploader({ value, onChange }: Props) {
     setPendingPreview(previewDataUrl);
     setStatus("uploading");
 
+    const upload = await resizeForUpload(file);
     const form = new FormData();
-    form.append("file", file, file.name);
+    form.append("file", upload, upload.name);
 
     let res: Response;
     try {
