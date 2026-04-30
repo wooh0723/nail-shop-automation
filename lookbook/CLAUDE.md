@@ -17,8 +17,8 @@ Notion DB → 로컬 JSON/이미지 다운로드 → Next.js 정적 렌더링(SS
 ## 활성 작업 (2026-04-30 기준)
 
 - **PRD**: `docs/PRD-booking-request.md` — 예약 상담 수집 플로우 (문자 링크 → 분기 → 정보입력 → 노션 DB)
-- **Active exec-plans**: `013-regression-and-deploy` 1개 남음 (007~012, 014 완료)
-- **현재 상태**: plan 014(사전확인 + 방문 예정일 + 노션 스키마 동기화) 완료. plan 013은 **commit + push + 배포만 남음**. 노션 테스트 row 3개 정리는 사용자 액션. 상세는 `docs/exec-plans/active/013-regression-and-deploy.md` "현재 진행 상태" 섹션 참조.
+- **Active exec-plans**: 없음 (007~015 모두 done). 원장 QA 단계.
+- **현재 상태**: 프로덕션 https://lookbook-mu-virid.vercel.app 정상. 이름·연락처만 필수, 나머지(지점·방문 예정일·사전확인 전체) 선택. 노션 테스트 row 6개 정리는 사용자 액션 (plan 015 운영 메모 참조).
 - 세션 시작 시 `.claude/hooks/session-start.sh`가 현재 상태 자동 주입
 
 ## 하네스 구성
@@ -57,6 +57,8 @@ Notion DB → 로컬 JSON/이미지 다운로드 → Next.js 정적 렌더링(SS
 | PEDI 썸네일을 `body[1]` 이미지로 스왑 | 본문 두 번째 이미지는 대부분 **재료/도구 레퍼런스 사진**이지 페디 완성 사진이 아님 (2026-04-20 확인). 썸네일은 `page.cover` 사용 유지 |
 | 노션 booking DB 컬럼명을 노션 UI에서만 리네임 | API props 키와 어긋나면 즉시 502. 매니저가 리네임할 경우 `app/api/booking/route.ts` props 매핑도 동시 수정 필요. 현재 매핑: `첨부사진확인(title)`/`유형(select)`/`고객명(rich_text)` |
 | RHF Controller 필드 값을 형제/부모에서 `watch()`로 읽기 | Controller mount 타이밍과 watch 구독이 어긋나 setValue 후 re-render 누락. 반드시 `useWatch({ control, name })` 사용 (plan 014 디버깅 노트 참고) |
+| 4MB 초과 이미지를 `/api/upload`에 직접 POST | Vercel 서버리스 body cap 4.5MB라 핸들러 도달 전 413. 폰 사진은 거의 항상 초과. 클라이언트에서 `lib/booking/imageThumbnail.ts:resizeForUpload` 통과시킨 후 업로드 (plan 015 C 참조) |
+| `searchParams` 의존하는 SSR 동작을 force-dynamic 없이 두기 | Next.js 16이 `app/page.tsx`를 정적 prerender하면 빌드 시점 빈 searchParams로 고정 → 런타임에 mode 반영 안 됨. `export const dynamic = "force-dynamic"` 또는 `<Suspense>` 패턴 필수 (plan 015 B 참조) |
 
 ---
 
@@ -117,5 +119,6 @@ Notion DB → 로컬 JSON/이미지 다운로드 → Next.js 정적 렌더링(SS
 010-custom-track-and-upload     /book/custom + Notion File Upload API       ✅
 011-contact-form                /book/contact + 요약 카드 + zod 검증        ✅
 012-booking-api-and-done        /api/booking + /book/done                   ✅
-013-regression-and-deploy       회귀 테스트 + 배포 (commit/deploy 대기)     🔄
+013-regression-and-deploy       회귀 테스트 + 배포                          ✅
 014-precheck-and-visitdate      사전확인 섹션 + 방문 예정일 + 노션 스키마 동기화 ✅
+015-post-launch-polish          정렬·UI 폴리시·필드 옵셔널화·인프라 복구       ✅
