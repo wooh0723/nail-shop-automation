@@ -249,21 +249,29 @@ function ContactForm({
             >
               지점
             </label>
-            <select
-              id="branch"
-              defaultValue={initialBranch ?? ""}
-              {...register("branch")}
-              className="h-12 w-full rounded-lg border border-foreground/15 bg-transparent px-3 text-sm focus:border-foreground/40 focus:outline-none"
-            >
-              <option value="" disabled>
-                지점을 선택하세요
-              </option>
-              {BRANCHES.map((b) => (
-                <option key={b} value={b}>
-                  {b}점
+            <div className="relative">
+              <select
+                id="branch"
+                defaultValue={initialBranch ?? ""}
+                {...register("branch")}
+                className="h-12 w-full appearance-none rounded-lg border border-foreground/15 bg-transparent pl-3 pr-10 text-sm focus:border-foreground/40 focus:outline-none"
+              >
+                <option value="" disabled>
+                  지점을 선택하세요
                 </option>
-              ))}
-            </select>
+                {BRANCHES.map((b) => (
+                  <option key={b} value={b}>
+                    {b}점
+                  </option>
+                ))}
+              </select>
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[10px] text-foreground/50"
+              >
+                ▾
+              </span>
+            </div>
             {errors.branch && (
               <p className="mt-1 text-[12px] text-red-600">
                 {errors.branch.message}
