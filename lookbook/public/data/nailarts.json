@@ -1046,6 +1046,25 @@
     "purchaseLinks": []
   },
   {
+    "id": "33c57ddb2d6780e4830ce58b65b658d0",
+    "name": "PEDI_2605_79아트_2",
+    "category": "PEDI",
+    "theme": "",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "발산점",
+    "order": 2,
+    "coverImage": "/images/nail/33c57ddb2d6780e4830ce58b65b658d0-cover.webp",
+    "coverWidth": 230,
+    "coverHeight": 137,
+    "detailImages": [
+      "/images/nail/33c57ddb2d6780e4830ce58b65b658d0-0.webp",
+      "/images/nail/33c57ddb2d6780e4830ce58b65b658d0-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
     "id": "32957ddb2d678176881ec5d6a30ed033",
     "name": "NAIL_2604_FRIENDS_39아트_3",
     "category": "NAIL",
@@ -1578,6 +1597,25 @@
     "purchaseLinks": []
   },
   {
+    "id": "33c57ddb2d67807d8778e92311023a11",
+    "name": "PEDI_2605_79아트_3",
+    "category": "PEDI",
+    "theme": "",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "홍대점",
+    "order": 3,
+    "coverImage": "/images/nail/33c57ddb2d67807d8778e92311023a11-cover.webp",
+    "coverWidth": 272,
+    "coverHeight": 139,
+    "detailImages": [
+      "/images/nail/33c57ddb2d67807d8778e92311023a11-0.webp",
+      "/images/nail/33c57ddb2d67807d8778e92311023a11-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
     "id": "32957ddb2d67817ab96ef67a46e09658",
     "name": "NAIL_2604_FRIENDS_39아트_4",
     "category": "NAIL",
@@ -2092,6 +2130,25 @@
     "purchaseLinks": []
   },
   {
+    "id": "33c57ddb2d67806eb00bf8da0f8328ae",
+    "name": "PEDI_2605_79아트_4",
+    "category": "PEDI",
+    "theme": "",
+    "price": "79아트",
+    "season": "2605",
+    "artist": "홍대점",
+    "order": 4,
+    "coverImage": "/images/nail/33c57ddb2d67806eb00bf8da0f8328ae-cover.webp",
+    "coverWidth": 266,
+    "coverHeight": 151,
+    "detailImages": [
+      "/images/nail/33c57ddb2d67806eb00bf8da0f8328ae-0.webp",
+      "/images/nail/33c57ddb2d67806eb00bf8da0f8328ae-1.webp"
+    ],
+    "materials": [],
+    "purchaseLinks": []
+  },
+  {
     "id": "32957ddb2d678105b2d0cb58a09b1816",
     "name": "NAIL_2604",
     "category": "NAIL",
@@ -2184,63 +2241,6 @@
     "coverWidth": 0,
     "coverHeight": 0,
     "detailImages": [],
-    "materials": [],
-    "purchaseLinks": []
-  },
-  {
-    "id": "33c57ddb2d67806eb00bf8da0f8328ae",
-    "name": "PEDI_2605_79아트",
-    "category": "PEDI",
-    "theme": "",
-    "price": "79아트",
-    "season": "2605",
-    "artist": "홍대점",
-    "order": 9007199254740991,
-    "coverImage": "/images/nail/33c57ddb2d67806eb00bf8da0f8328ae-cover.webp",
-    "coverWidth": 266,
-    "coverHeight": 151,
-    "detailImages": [
-      "/images/nail/33c57ddb2d67806eb00bf8da0f8328ae-0.webp",
-      "/images/nail/33c57ddb2d67806eb00bf8da0f8328ae-1.webp"
-    ],
-    "materials": [],
-    "purchaseLinks": []
-  },
-  {
-    "id": "33c57ddb2d67807d8778e92311023a11",
-    "name": "PEDI_2605_79아트_",
-    "category": "PEDI",
-    "theme": "",
-    "price": "79아트",
-    "season": "2605",
-    "artist": "홍대점",
-    "order": 9007199254740991,
-    "coverImage": "/images/nail/33c57ddb2d67807d8778e92311023a11-cover.webp",
-    "coverWidth": 272,
-    "coverHeight": 139,
-    "detailImages": [
-      "/images/nail/33c57ddb2d67807d8778e92311023a11-0.webp",
-      "/images/nail/33c57ddb2d67807d8778e92311023a11-1.webp"
-    ],
-    "materials": [],
-    "purchaseLinks": []
-  },
-  {
-    "id": "33c57ddb2d6780e4830ce58b65b658d0",
-    "name": "PEDI_2605_79아트_2",
-    "category": "PEDI",
-    "theme": "",
-    "price": "79아트",
-    "season": "2605",
-    "artist": "발산점",
-    "order": 9007199254740991,
-    "coverImage": "/images/nail/33c57ddb2d6780e4830ce58b65b658d0-cover.webp",
-    "coverWidth": 230,
-    "coverHeight": 137,
-    "detailImages": [
-      "/images/nail/33c57ddb2d6780e4830ce58b65b658d0-0.webp",
-      "/images/nail/33c57ddb2d6780e4830ce58b65b658d0-1.webp"
-    ],
     "materials": [],
     "purchaseLinks": []
   }
