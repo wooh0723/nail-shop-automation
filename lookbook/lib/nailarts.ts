@@ -9,6 +9,7 @@ export interface NailArt {
   price: string;
   season: string;
   artist: string;
+  order: number;
   coverImage: string;
   coverWidth: number;
   coverHeight: number;

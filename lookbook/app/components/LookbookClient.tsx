@@ -106,24 +106,23 @@ export default function LookbookClient({
   return (
     <div>
       {selectMode && (
-        <div className="-mx-5 mb-3 flex items-center gap-1 border-b border-foreground/10 bg-background/95 px-3 py-2 backdrop-blur">
+        <div className="-mx-5 mb-3 flex items-center border-b border-foreground/10 bg-background/95 px-3 py-2 backdrop-blur">
           <BackButton to="/book" ariaLabel="예약 분기로 돌아가기" />
-          <p className="text-[12px] tracking-tight text-foreground/70">
-            마음에 드는 아트를 선택해주세요
-          </p>
         </div>
       )}
 
-      {/* Header — brand + season */}
+      {/* Header — brand + season (brand hidden in select mode) */}
       <header className="mb-3 flex items-baseline justify-between">
-        <span
-          className="text-[20px] font-extralight tracking-tight text-[#bbb] uppercase"
-          style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
-        >
-          Signicho Nail
-        </span>
+        {!selectMode && (
+          <span
+            className="text-[20px] font-extralight tracking-tight text-[#bbb] uppercase"
+            style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
+          >
+            Signicho Nail
+          </span>
+        )}
 
-        <div className="relative" ref={dropdownRef}>
+        <div className="relative ml-auto" ref={dropdownRef}>
           <button
             onClick={() => setSeasonOpen((v) => !v)}
             className="cursor-pointer text-[20px] font-semibold tracking-tight text-[#0a0a0a] border-b border-dashed border-[#aaa] pb-px"

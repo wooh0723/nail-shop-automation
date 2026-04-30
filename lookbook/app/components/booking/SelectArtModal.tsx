@@ -51,17 +51,6 @@ export default function SelectArtModal({ art, onClose, onConfirm }: Props) {
           )}
         </div>
 
-        <div className="mt-4 flex items-baseline justify-between">
-          <p className="truncate text-sm font-medium tracking-tight text-foreground">
-            {art.name?.trim() || "—"}
-          </p>
-          {(art.price || art.theme) && (
-            <p className="ml-3 shrink-0 text-xs text-foreground/60">
-              {[art.price, art.theme].filter(Boolean).join(" · ")}
-            </p>
-          )}
-        </div>
-
         <input
           type="text"
           value={memo}

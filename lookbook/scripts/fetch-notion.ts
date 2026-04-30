@@ -34,6 +34,7 @@ interface NailArt {
   price: string;
   season: string;
   artist: string;
+  order: number;
   coverImage: string;
   coverWidth: number;
   coverHeight: number;
@@ -82,6 +83,14 @@ async function processCoverImage(
 
 function getSelectValue(prop: any): string {
   return prop?.select?.name ?? "";
+}
+
+// `순서`가 select 옵션("1","2","3"...)이라 정수 파싱. 빈/비숫자는 가장 뒤로.
+function getSelectAsOrder(prop: any): number {
+  const raw = prop?.select?.name;
+  if (!raw) return Number.MAX_SAFE_INTEGER;
+  const n = parseInt(raw, 10);
+  return Number.isFinite(n) ? n : Number.MAX_SAFE_INTEGER;
 }
 
 function getTitle(prop: any): string {
@@ -204,6 +213,7 @@ async function processPage(page: PageObjectResponse): Promise<NailArt> {
     price: getSelectValue(props["가격"]),
     season: getSelectValue(props["시기"]),
     artist: getSelectValue(props["제안자"]),
+    order: getSelectAsOrder(props["순서"]),
     coverImage,
     coverWidth,
     coverHeight,
@@ -229,6 +239,9 @@ async function main() {
     const art = await processPage(page);
     results.push(art);
   }
+
+  // 순서 오름차순(1→2→3...). 동순위는 이름순.
+  results.sort((a, b) => a.order - b.order || a.name.localeCompare(b.name));
 
   fs.writeFileSync(OUT_JSON, JSON.stringify(results, null, 2), "utf-8");
   console.log(`\n완료: ${results.length}개 → ${OUT_JSON}`);
