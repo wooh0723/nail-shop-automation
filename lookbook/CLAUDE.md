@@ -14,10 +14,23 @@ Notion DB → 로컬 JSON/이미지 다운로드 → Next.js 정적 렌더링(SS
 - **작업 단위를 작게** — 각 단계마다 완료 조건을 명령어 실행으로 확인 후 다음으로 넘어간다.
 - **순차적 실행** — `docs/exec-plans/active/` 디렉토리 내의 파일 번호 순서대로 실행한다.
 
-## 세션 시작/종료 루틴
+## 활성 작업 (2026-04-30 기준)
 
-모든 exec-plan(001~006)이 완료되어 현재 active plan 없음.
-새 작업은 사용자 요청에 따라 진행.
+- **PRD**: `docs/PRD-booking-request.md` — 예약 상담 수집 플로우 (문자 링크 → 분기 → 정보입력 → 노션 DB)
+- **Active exec-plans**: `013-regression-and-deploy` 1개 남음 (007~012, 014 완료)
+- **현재 상태**: plan 014(사전확인 + 방문 예정일 + 노션 스키마 동기화) 완료. plan 013은 **commit + push + 배포만 남음**. 노션 테스트 row 3개 정리는 사용자 액션. 상세는 `docs/exec-plans/active/013-regression-and-deploy.md` "현재 진행 상태" 섹션 참조.
+- 세션 시작 시 `.claude/hooks/session-start.sh`가 현재 상태 자동 주입
+
+## 하네스 구성
+
+- `.claude/settings.json` — 공유 허용/차단 목록 + hooks + statusLine
+- `.claude/hooks/` — PreToolUse 차단(`guard-edit.sh`, `guard-bash.sh`), Stop 타입체크, SessionStart 컨텍스트
+- `.claude/commands/` — `/fetch`, `/deploy`, `/new-plan`, `/done`, `/build`, `/pipeline-status`
+- `.claude/skills/` — `notion-booking-write`(PRD 구현 필수 규약), `exec-plan-lifecycle`(plan 운영 규칙)
+- `.mcp.json` — Notion MCP(@notionhq/notion-mcp-server, `NOTION_TOKEN` 사용) + Vercel MCP(https://mcp.vercel.com) 자동 활성
+- 금지사항은 **hooks로 자동 강제** — 문서만 보고 준수하려 하지 말 것
+
+## 세션 시작/종료 루틴
 
 1. 사용자 요청을 파악한다.
 2. 코드 작성 및 수정 작업을 진행한다.
@@ -42,6 +55,8 @@ Notion DB → 로컬 JSON/이미지 다운로드 → Next.js 정적 렌더링(SS
 | Actions workflow에서 Deploy 스텝의 `working-directory` 변경 | Deploy 스텝은 반드시 리포 루트(`.`)에서 실행해야 함. `lookbook`에서 실행하면 `lookbook/lookbook` 이중 경로 에러 |
 | 커버 이미지를 특정 aspect로 sharp 크롭 | 노션 원본이 아트별로 다른 비율로 업로드되므로 강제 크롭은 손톱 팁/큐티클 잘림 유발. 그리드 컨테이너 aspect로 표시 비율 조정할 것 |
 | PEDI 썸네일을 `body[1]` 이미지로 스왑 | 본문 두 번째 이미지는 대부분 **재료/도구 레퍼런스 사진**이지 페디 완성 사진이 아님 (2026-04-20 확인). 썸네일은 `page.cover` 사용 유지 |
+| 노션 booking DB 컬럼명을 노션 UI에서만 리네임 | API props 키와 어긋나면 즉시 502. 매니저가 리네임할 경우 `app/api/booking/route.ts` props 매핑도 동시 수정 필요. 현재 매핑: `첨부사진확인(title)`/`유형(select)`/`고객명(rich_text)` |
+| RHF Controller 필드 값을 형제/부모에서 `watch()`로 읽기 | Controller mount 타이밍과 watch 구독이 어긋나 setValue 후 re-render 누락. 반드시 `useWatch({ control, name })` 사용 (plan 014 디버깅 노트 참고) |
 
 ---
 
@@ -53,6 +68,15 @@ Notion DB → 로컬 JSON/이미지 다운로드 → Next.js 정적 렌더링(SS
 - **카테고리:** 노션 "구분" 프로퍼티(NAIL/PEDI) 기준 필터. 화면 하단 중앙에 `CategoryToggle` 고정 배치
 - **렌더링:** Next.js App Router, `generateStaticParams` 사용한 100% 정적 렌더링
 - **배포:** GitHub Actions 전용 (Vercel Git 자동 배포는 비활성화 상태)
+- **예약 booking DB 스키마** (`NOTION_BOOKING_DATABASE_ID`, 2026-04-30 기준):
+  - title: `첨부사진확인` (요청번호 REQ-... 저장)
+  - select: `유형` (이달아/타샵디자인), `지점` (홍대/건대/신논현/발산/신림)
+  - rich_text: `고객명`, `예약자 메모`, `이달아 메모`, `디자인 메모`
+  - phone_number: `연락처`
+  - date: `방문일자`
+  - relation: `이달아 유형` (lookbook 아트 DB)
+  - status: `상태` (자동), created_time: `제출일시` (자동)
+  - 본문 image block: 손사진(있으면) + 디자인 이미지(트랙B) — file_upload_id로 attach
 
 ---
 
@@ -78,12 +102,20 @@ Notion DB → 로컬 JSON/이미지 다운로드 → Next.js 정적 렌더링(SS
 
 ---
 
-## Exec-plans 목록 (모두 완료)
+## Exec-plans 목록
 
 ```
-001-init-structure      폴더/파일 구조 + 문서 세팅                          ✅
-002-fetch-script        노션 fetch 스크립트 및 이미지 다운로더 구현          ✅
-003-static-render       Next.js 정적 렌더링(SSG) 뷰 구현                   ✅
-004-filter-sort         테마 탭 + 가격 버튼 네비게이션 구현                  ✅
-005-visual-design       Supanova 스킬 적용 + B&W 스타일링                  ✅
-006-github-actions      GitHub Actions + Vercel 자동 배포 파이프라인        ✅
+001-init-structure              폴더/파일 구조 + 문서 세팅                  ✅
+002-fetch-script                노션 fetch 스크립트 및 이미지 다운로더      ✅
+003-static-render               Next.js 정적 렌더링(SSG) 뷰 구현            ✅
+004-filter-sort                 테마 탭 + 가격 버튼 네비게이션              ✅
+005-visual-design               Supanova 스킬 적용 + B&W 스타일링           ✅
+006-github-actions              GitHub Actions + Vercel 자동 배포           ✅
+007-booking-setup               예약 상담 플로우 환경/DB/의존성 세팅        ✅
+008-book-entry-and-draft        /book 분기 페이지 + sessionStorage          ✅
+009-lookbook-select-mode        룩북 선택모드(?mode=select) + 팝업          ✅
+010-custom-track-and-upload     /book/custom + Notion File Upload API       ✅
+011-contact-form                /book/contact + 요약 카드 + zod 검증        ✅
+012-booking-api-and-done        /api/booking + /book/done                   ✅
+013-regression-and-deploy       회귀 테스트 + 배포 (commit/deploy 대기)     🔄
+014-precheck-and-visitdate      사전확인 섹션 + 방문 예정일 + 노션 스키마 동기화 ✅

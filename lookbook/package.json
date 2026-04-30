@@ -10,13 +10,16 @@
     "fetch": "tsx scripts/fetch-notion.ts"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
     "@notionhq/client": "^2.3.0",
     "dotenv": "^17.4.1",
     "next": "^16.2.2",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "react-hook-form": "^7.73.1",
     "sharp": "^0.34.5",
-    "tsx": "^4.21.0"
+    "tsx": "^4.21.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

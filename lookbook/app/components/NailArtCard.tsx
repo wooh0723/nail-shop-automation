@@ -1,9 +1,7 @@
 import Image from "next/image";
 import type { NailArt } from "@/lib/nailarts";
 
-export default function NailArtCard({
-  art,
-}: {
+type Props = {
   art: Pick<
     NailArt,
     | "id"
@@ -17,7 +15,10 @@ export default function NailArtCard({
     | "coverHeight"
     | "artist"
   >;
-}) {
+  onClick?: () => void;
+};
+
+export default function NailArtCard({ art, onClick }: Props) {
   const isPedi = art.category === "PEDI";
   const hasDims = art.coverWidth > 0 && art.coverHeight > 0;
   const wrapperClass = isPedi ? "mx-auto max-w-[65%]" : "";
@@ -28,8 +29,8 @@ export default function NailArtCard({
       : undefined;
   const aspectClass = isPedi && hasDims ? "" : "aspect-[5/2]";
 
-  return (
-    <div className={wrapperClass}>
+  const inner = (
+    <>
       <div
         className={`relative ${aspectClass} overflow-hidden bg-[#f0f0f0]`}
         style={containerStyle}
@@ -51,8 +52,23 @@ export default function NailArtCard({
         )}
       </div>
       <p className="mt-2.5 truncate text-[13px] font-medium tracking-tight text-[#0a0a0a]">
-        {art.name || "\u2014"}
+        {art.name || "—"}
       </p>
-    </div>
+    </>
   );
+
+  if (onClick) {
+    return (
+      <button
+        type="button"
+        onClick={onClick}
+        className={`magnetic-btn block w-full text-left ${wrapperClass}`}
+        aria-label={`${art.name?.trim() || "네일아트"} 선택`}
+      >
+        {inner}
+      </button>
+    );
+  }
+
+  return <div className={wrapperClass}>{inner}</div>;
 }

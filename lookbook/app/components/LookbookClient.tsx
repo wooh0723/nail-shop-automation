@@ -1,11 +1,15 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import type { NailArt } from "@/lib/nailarts";
 import NailArtCard from "./NailArtCard";
 import CategoryToggle, { type Category } from "./CategoryToggle";
 import ThemeTabs, { THEMES, type Theme } from "./ThemeTabs";
 import PriceSwiper, { PRICES, type PriceIndex } from "./PriceSwiper";
+import SelectArtModal from "./booking/SelectArtModal";
+import BackButton from "./booking/BackButton";
+import { useBookingDraft } from "@/lib/booking/useBookingDraft";
 
 function formatSeason(s: string): string {
   if (s.length !== 4) return s;
@@ -20,13 +24,25 @@ export default function LookbookClient({
   arts: NailArt[];
   seasons: string[];
 }) {
+  const router = useRouter();
+  const { patch } = useBookingDraft();
+
   const [category, setCategory] = useState<Category>("NAIL");
   const [theme, setTheme] = useState<Theme>(THEMES[0]);
   const [priceIndex, setPriceIndex] = useState<PriceIndex>(0);
   const [activeSeason, setActiveSeason] = useState<string>(seasons[0] ?? "");
   const [seasonOpen, setSeasonOpen] = useState(false);
   const [contentKey, setContentKey] = useState(0);
+  const [selectMode, setSelectMode] = useState(false);
+  const [selectedArt, setSelectedArt] = useState<NailArt | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Detect ?mode=select on the client to keep the page statically prerendered.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const sp = new URLSearchParams(window.location.search);
+    setSelectMode(sp.get("mode") === "select");
+  }, []);
 
   function handleCategoryChange(next: Category) {
     setCategory(next);
@@ -47,6 +63,21 @@ export default function LookbookClient({
     setActiveSeason(s);
     setSeasonOpen(false);
     setContentKey((k) => k + 1);
+  }
+
+  function handleConfirm(variationMemo: string) {
+    if (!selectedArt) return;
+    patch({
+      track: "existing",
+      existing: {
+        artId: selectedArt.id,
+        artName: selectedArt.name?.trim() || "",
+        coverImage: selectedArt.coverImage,
+        variationMemo,
+      },
+    });
+    setSelectedArt(null);
+    router.push("/book/contact");
   }
 
   useEffect(() => {
@@ -74,6 +105,15 @@ export default function LookbookClient({
 
   return (
     <div>
+      {selectMode && (
+        <div className="-mx-5 mb-3 flex items-center gap-1 border-b border-foreground/10 bg-background/95 px-3 py-2 backdrop-blur">
+          <BackButton to="/book" ariaLabel="예약 분기로 돌아가기" />
+          <p className="text-[12px] tracking-tight text-foreground/70">
+            마음에 드는 아트를 선택해주세요
+          </p>
+        </div>
+      )}
+
       {/* Header — brand + season */}
       <header className="mb-3 flex items-baseline justify-between">
         <span
@@ -140,7 +180,12 @@ export default function LookbookClient({
             {filtered.map((art, i) => (
               <div key={art.id}>
                 {i > 0 && <div className="my-4 h-px bg-[#e8e8e8]" />}
-                <NailArtCard art={art} />
+                <NailArtCard
+                  art={art}
+                  onClick={
+                    selectMode ? () => setSelectedArt(art) : undefined
+                  }
+                />
               </div>
             ))}
           </div>
@@ -158,6 +203,12 @@ export default function LookbookClient({
           <CategoryToggle active={category} onChange={handleCategoryChange} />
         </div>
       </div>
+
+      <SelectArtModal
+        art={selectedArt}
+        onClose={() => setSelectedArt(null)}
+        onConfirm={handleConfirm}
+      />
     </div>
   );
 }
